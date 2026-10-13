@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Produits — Real Cafe Admin</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="stylesheet" href="/styles.css">
+<style>
+  body{background:var(--ink); color:var(--cream); font-family:var(--font-b); margin:0;}
+  .admin-wrap{max-width:1100px; margin:0 auto; padding:2rem 1.5rem;}
+  .admin-header{display:flex; justify-content:space-between; align-items:center; gap:1rem; margin-bottom:2rem; flex-wrap:wrap;}
+  .admin-title{font-family:var(--font-d); font-size:1.5rem; margin:0;}
+  .admin-nav{display:flex; gap:1rem; font-size:0.88rem; color:var(--muted);}
+  .admin-nav a{color:var(--muted); text-decoration:none;}
+  .admin-nav a:hover{color:var(--cream);}
+  .admin-nav a.active{color:var(--amber-2); font-weight:600;}
+
+  .admin-btn{display:inline-flex; align-items:center; gap:0.5rem; padding:0.6rem 1.1rem; border-radius:2px; border:1px solid var(--amber); background:var(--amber); color:var(--ink); font-weight:600; font-size:0.88rem; cursor:pointer; text-decoration:none; font-family:inherit;}
+  .admin-btn:hover{background:var(--amber-2);}
+  .admin-btn.secondary{background:transparent; color:var(--cream); border-color:var(--line-strong);}
+  .admin-btn.secondary:hover{border-color:var(--cream);}
+  .admin-btn.danger{background:transparent; color:#D98A6B; border-color:#9A6B54;}
+  .admin-btn.danger:hover{background:rgba(217,138,107,0.08);}
+
+  .admin-login{max-width:360px; margin:6rem auto; padding:2rem; border:1px solid var(--line-strong); border-radius:3px; background:var(--ink-2);}
+  .admin-login h2{font-family:var(--font-d); font-size:1.2rem; margin:0 0 1.2rem;}
+  .admin-login input{width:100%; padding:0.75rem 0.85rem; background:transparent; color:var(--cream); border:1px solid var(--line-strong); border-radius:2px; font-family:inherit; font-size:0.95rem; margin-bottom:1rem;}
+  .admin-login input:focus{outline:none; border-color:var(--amber-2);}
+  .admin-login button{width:100%; padding:0.75rem 1rem; background:var(--amber); color:var(--ink); border:1px solid var(--amber); border-radius:2px; font-weight:600; cursor:pointer; font-family:inherit;}
+  .admin-login button:hover{background:var(--amber-2);}
+  .admin-err{color:#D98A6B; font-size:0.85rem; min-height:1.2em; margin-top:0.5rem;}
+
+  .admin-products{display:flex; flex-direction:column; gap:1rem;}
+  .admin-product{display:grid; grid-template-columns:80px 1fr auto; gap:1rem; align-items:center; padding:1rem; border:1px solid var(--line); border-radius:3px; background:var(--ink-2);}
+  .admin-product-image{width:80px; height:80px; border-radius:3px; background:linear-gradient(135deg, #3B2E1E, #1C1510); overflow:hidden;}
+  .admin-product-image img{width:100%; height:100%; object-fit:cover;}
+  .admin-product-info h3{font-family:var(--font-d); font-size:1.1rem; margin:0 0 0.3rem;}
+  .admin-product-meta{font-size:0.82rem; color:var(--muted);}
+  .admin-product-price{font-family:var(--font-d); color:var(--amber-2); font-size:0.95rem; margin-top:0.3rem;}
+  .admin-product-actions{display:flex; gap:0.4rem; flex-wrap:wrap;}
+  .admin-badge{display:inline-block; font-size:0.7rem; padding:0.15rem 0.5rem; border-radius:99px; margin-left:0.5rem; vertical-align:middle;}
+  .admin-badge.active{background:rgba(126,140,110,0.2); color:#7E8C6E;}
+  .admin-badge.inactive{background:rgba(154,107,84,0.2); color:#9A6B54;}
+
+  /* Modale produit */
+  .admin-modal-backdrop{position:fixed; inset:0; background:rgba(10,8,6,0.75); z-index:199; opacity:0; pointer-events:none; transition:opacity .3s ease;}
+  .admin-modal-backdrop.open{opacity:1; pointer-events:auto;}
+  .admin-modal{position:fixed; top:50%; left:50%; transform:translate(-50%, -48%); width:min(600px, 92vw); max-height:88vh; overflow-y:auto; background:var(--ink-2); border:1px solid var(--line-strong); border-radius:4px; z-index:200; padding:2rem; opacity:0; pointer-events:none; transition:opacity .3s ease, transform .3s ease;}
+  .admin-modal.open{opacity:1; pointer-events:auto; transform:translate(-50%, -50%);}
+  .admin-modal h2{font-family:var(--font-d); font-size:1.3rem; margin:0 0 1.5rem;}
+  .admin-form{display:grid; grid-template-columns:1fr 1fr; gap:1rem;}
+  .admin-form .full{grid-column:1 / -1;}
+  .admin-form label{display:block; font-size:0.78rem; color:var(--muted); text-transform:uppercase; letter-spacing:0.04em; margin-bottom:0.4rem;}
+  .admin-form input, .admin-form select, .admin-form textarea{width:100%; padding:0.65rem 0.8rem; background:transparent; color:var(--cream); border:1px solid var(--line-strong); border-radius:2px; font-family:inherit; font-size:0.92rem;}
+  .admin-form input:focus, .admin-form select:focus, .admin-form textarea:focus{outline:none; border-color:var(--amber-2);}
+  .admin-form textarea{resize:vertical; min-height:80px;}
+  .admin-form-actions{display:flex; gap:0.8rem; justify-content:flex-end; margin-top:1.5rem;}
+  .admin-modal-close{position:absolute; top:1rem; right:1rem; width:32px; height:32px; border-radius:50%; border:1px solid var(--line-strong); background:transparent; color:var(--cream); cursor:pointer;}
+  .admin-modal-close:hover{border-color:var(--amber-2); color:var(--amber-2);}
+  @media (max-width:700px){
+    .admin-product{grid-template-columns:60px 1fr; }
+    .admin-product-actions{grid-column:1 / -1; justify-content:flex-end;}
+    .admin-form{grid-template-columns:1fr;}
+  }
+</style>
+</head>
+<body>
+
+<!-- LOGIN -->
+<div class="admin-login" id="loginScreen">
+  <h2>Back-office produits</h2>
+  <input type="password" id="pwd" placeholder="Mot de passe" autocomplete="current-password">
+  <button id="loginBtn">Entrer</button>
+  <div class="admin-err" id="loginErr"></div>
+</div>
+
+<!-- ADMIN -->
+<div class="admin-wrap" id="adminScreen" style="display:none;">
+  <div class="admin-header">
+    <div>
+      <h1 class="admin-title">Produits</h1>
+      <nav class="admin-nav">
+        <a href="/admin/">Réservations</a>
+        <a href="/admin/products.html" class="active">Produits</a>
+        <a href="/admin/orders.html">Commandes</a>
+      </nav>
+    </div>
+    <div style="display:flex; gap:0.6rem;">
+      <button class="admin-btn" id="addBtn">+ Nouveau produit</button>
+      <button class="admin-btn secondary" id="logoutBtn">Déconnexion</button>
+    </div>
+  </div>
+
+  <div class="admin-products" id="productsList">
+    <p style="color:var(--muted);">Chargement…</p>
+  </div>
+</div>
+
+<!-- MODALE -->
+<div class="admin-modal-backdrop" id="modalBackdrop"></div>
+<div class="admin-modal" id="modal" role="dialog" aria-modal="true" aria-hidden="true">
+  <button class="admin-modal-close" id="modalClose" aria-label="Fermer">✕</button>
+  <h2 id="modalTitle">Nouveau produit</h2>
+
+  <form class="admin-form" id="productForm" novalidate>
+    <input type="hidden" id="p-id">
+
+    <div>
+      <label for="p-slug">Slug (URL) *</label>
+      <input type="text" id="p-slug" placeholder="yirgacheffe" required>
+    </div>
+
+    <div>
+      <label for="p-name">Nom *</label>
+      <input type="text" id="p-name" placeholder="Yirgacheffe" required>
+    </div>
+
+    <div class="full">
+      <label for="p-origin">Origine</label>
+      <input type="text" id="p-origin" placeholder="Éthiopie, Guji">
+    </div>
+
+    <div class="full">
+      <label for="p-description">Description</label>
+      <textarea id="p-description" placeholder="Un café floral et lumineux…"></textarea>
+    </div>
+
+    <div>
+      <label for="p-roast">Torréfaction</label>
+      <select id="p-roast">
+        <option value="">—</option>
+        <option value="clair">Claire</option>
+        <option value="moyen">Moyenne</option>
+        <option value="fonce">Foncée</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="p-image">Image (URL)</label>
+      <input type="text" id="p-image" placeholder="/assets/gallery/…">
+    </div>
+
+    <div class="full">
+      <label for="p-notes">Notes (séparées par des virgules)</label>
+      <input type="text" id="p-notes" placeholder="Agrumes, Jasmin, Miel">
+    </div>
+
+    <div>
+      <label for="p-price250">Prix 250g (DT) *</label>
+      <input type="number" id="p-price250" step="0.01" min="0" required>
+    </div>
+
+    <div>
+      <label for="p-price500">Prix 500g (DT)</label>
+      <input type="number" id="p-price500" step="0.01" min="0">
+    </div>
+
+    <div>
+      <label for="p-price1kg">Prix 1kg (DT)</label>
+      <input type="number" id="p-price1kg" step="0.01" min="0">
+    </div>
+
+    <div>
+      <label for="p-stock">Stock</label>
+      <input type="number" id="p-stock" min="0" value="0">
+    </div>
+
+    <div>
+      <label>&nbsp;</label>
+      <label style="display:flex; align-items:center; gap:0.5rem; text-transform:none; font-size:0.9rem; color:var(--cream);">
+        <input type="checkbox" id="p-active" checked style="width:auto;"> Actif
+      </label>
+    </div>
+
+    <div>
+      <label>&nbsp;</label>
+      <label style="display:flex; align-items:center; gap:0.5rem; text-transform:none; font-size:0.9rem; color:var(--cream);">
+        <input type="checkbox" id="p-featured" style="width:auto;"> Coup de cœur
+      </label>
+    </div>
+
+    <div class="full admin-form-actions">
+      <button type="button" class="admin-btn secondary" id="modalCancel">Annuler</button>
+      <button type="submit" class="admin-btn" id="modalSave">Enregistrer</button>
+    </div>
+  </form>
+</div>
+
+<script src="/admin/products.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+{
+  "carnets": [
+    {
+      "slug": "portrait-abebe",
+      "category": "Producteur",
+      "date": "2026-08-12",
+      "title": "Abebe, et les 1 900 mètres de Guji",
+      "excerpt": "Il cultive une parcelle de deux hectares sur les hauts plateaux éthiopiens. On y est retournés en février — voilà ce qu'on a ramené dans nos sacs.",
+      "theme": "warm"
+    },
+    {
+      "slug": "trois-fois-par-semaine",
+      "category": "Torréfaction",
+      "date": "2026-07-28",
+      "title": "Pourquoi on torréfie trois fois par semaine",
+      "excerpt": "Trois torréfactions hebdomadaires, en petites quantités, et jamais plus de dix jours entre le tambour et la tasse. On explique pourquoi.",
+      "theme": "cool"
+    },
+    {
+      "slug": "makroudh-nour",
+      "category": "Cuisine",
+      "date": "2026-07-10",
+      "title": "Le makroudh de la tante de Nour",
+      "excerpt": "Notre pâtissière a accepté de partager la recette familiale — enfin, presque. La dose exacte de cannelle reste un secret de famille.",
+      "theme": "green"
+    }
+  ]
+}

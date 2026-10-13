@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Commander — Real Cafe</title>
+<meta name="description" content="Finaliser votre commande de café Real Cafe.">
+<meta name="theme-color" content="#17130F">
+<meta name="robots" content="noindex, nofollow">
+
+<link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+<header id="siteHeader" class="scrolled">
+  <nav class="wrap">
+    <a href="/" class="logo">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><ellipse cx="12" cy="12" rx="9" ry="10" stroke="currentColor" stroke-width="1.4"/><path d="M12 2.5C9 6 9 18 12 21.5" stroke="currentColor" stroke-width="1.4"/></svg>
+      Real Cafe
+      <span class="ar" lang="ar" dir="rtl">ريال كافي</span>
+    </a>
+    <a href="/boutique.html" class="btn-outline" style="margin-left:auto;">← Retour à la boutique</a>
+  </nav>
+</header>
+
+<main id="main">
+
+  <section class="checkout-hero">
+    <div class="wrap">
+      <h1 class="section-title">Finaliser la commande</h1>
+      <p class="section-note">Vérifiez votre panier et complétez vos informations.</p>
+    </div>
+  </section>
+
+  <section class="checkout-section">
+    <div class="wrap">
+      <div class="checkout-grid">
+
+        <!-- Colonne gauche : formulaire -->
+        <div class="checkout-form-wrap">
+
+          <!-- Étape 1 : Coordonnées -->
+          <div class="checkout-block">
+            <h2 class="checkout-block-title">
+              <span class="checkout-step">1</span>
+              Vos coordonnées
+            </h2>
+
+            <div class="checkout-fields">
+              <div class="field">
+                <label for="co-name">Nom complet *</label>
+                <input type="text" id="co-name" name="name" autocomplete="name" placeholder="Votre nom">
+                <span class="err" data-err="name" aria-live="polite"></span>
+              </div>
+
+              <div class="field">
+                <label for="co-phone">Téléphone *</label>
+                <input type="tel" id="co-phone" name="phone" autocomplete="tel" placeholder="+216 ...">
+                <span class="err" data-err="phone" aria-live="polite"></span>
+              </div>
+
+              <div class="field full">
+                <label for="co-email">Email (optionnel)</label>
+                <input type="email" id="co-email" name="email" autocomplete="email" placeholder="vous@exemple.com">
+                <span class="err" data-err="email" aria-live="polite"></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Étape 2 : Livraison -->
+          <div class="checkout-block">
+            <h2 class="checkout-block-title">
+              <span class="checkout-step">2</span>
+              Livraison
+            </h2>
+
+            <div class="checkout-options" id="deliveryOptions">
+              <label class="checkout-option">
+                <input type="radio" name="delivery" value="retrait" checked>
+                <div class="checkout-option-body">
+                  <div class="checkout-option-head">
+                    <span class="checkout-option-title">Retrait au café</span>
+                    <span class="checkout-option-price">Gratuit</span>
+                  </div>
+                  <p class="checkout-option-desc">12 Rue de la Casbah, Tunis. Prêt sous 2h.</p>
+                </div>
+              </label>
+
+              <label class="checkout-option">
+                <input type="radio" name="delivery" value="tunis">
+                <div class="checkout-option-body">
+                  <div class="checkout-option-head">
+                    <span class="checkout-option-title">Livraison Grand Tunis</span>
+                    <span class="checkout-option-price">7,00 DT</span>
+                  </div>
+                  <p class="checkout-option-desc">Livraison sous 24-48h.</p>
+                </div>
+              </label>
+
+              <label class="checkout-option">
+                <input type="radio" name="delivery" value="tunisie">
+                <div class="checkout-option-body">
+                  <div class="checkout-option-head">
+                    <span class="checkout-option-title">Livraison toute la Tunisie</span>
+                    <span class="checkout-option-price">12,00 DT</span>
+                  </div>
+                  <p class="checkout-option-desc">Livraison sous 3-5 jours.</p>
+                </div>
+              </label>
+            </div>
+
+            <div class="field full checkout-address" id="addressWrap" hidden>
+              <label for="co-address">Adresse de livraison *</label>
+              <textarea id="co-address" name="address" placeholder="Rue, code postal, ville"></textarea>
+              <span class="err" data-err="address" aria-live="polite"></span>
+            </div>
+          </div>
+
+          <!-- Étape 3 : Paiement -->
+          <div class="checkout-block">
+            <h2 class="checkout-block-title">
+              <span class="checkout-step">3</span>
+              Paiement
+            </h2>
+
+            <div class="checkout-options" id="paymentOptions">
+              <label class="checkout-option">
+                <input type="radio" name="payment" value="livraison" checked>
+                <div class="checkout-option-body">
+                  <div class="checkout-option-head">
+                    <span class="checkout-option-title">Paiement à la livraison</span>
+                  </div>
+                  <p class="checkout-option-desc">Vous payez en espèces au moment de la réception.</p>
+                </div>
+              </label>
+
+              <label class="checkout-option">
+                <input type="radio" name="payment" value="virement">
+                <div class="checkout-option-body">
+                  <div class="checkout-option-head">
+                    <span class="checkout-option-title">Virement bancaire</span>
+                  </div>
+                  <p class="checkout-option-desc">Vous recevrez nos coordonnées bancaires par email.</p>
+                </div>
+              </label>
+
+              <label class="checkout-option">
+                <input type="radio" name="payment" value="flouci">
+                <div class="checkout-option-body">
+                  <div class="checkout-option-head">
+                    <span class="checkout-option-title">Flouci</span>
+                    <span class="checkout-option-badge">Bientôt</span>
+                  </div>
+                  <p class="checkout-option-desc">Paiement mobile tunisien. En cours d'intégration.</p>
+                </div>
+              </label>
+            </div>
+
+            <div class="field full">
+              <label for="co-notes">Notes (optionnel)</label>
+              <textarea id="co-notes" name="notes" placeholder="Instructions particulières, préférences…"></textarea>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Colonne droite : récapitulatif -->
+        <aside class="checkout-summary">
+          <h2 class="checkout-summary-title">Récapitulatif</h2>
+
+          <div class="checkout-items" id="checkoutItems"></div>
+
+          <div class="checkout-totals">
+            <div class="cart-line">
+              <span>Sous-total</span>
+              <span id="checkoutSubtotal">0,00 DT</span>
+            </div>
+            <div class="cart-line" id="checkoutShippingRow">
+              <span>Livraison</span>
+              <span id="checkoutShipping">Gratuit</span>
+            </div>
+            <div class="cart-line total">
+              <span>Total</span>
+              <span id="checkoutTotal">0,00 DT</span>
+            </div>
+          </div>
+
+          <button type="button" class="checkout-submit" id="checkoutSubmit">
+            Confirmer la commande
+          </button>
+
+          <p class="checkout-legal">
+            En confirmant, vous acceptez nos conditions de vente. Nous vous contacterons par téléphone pour valider.
+          </p>
+        </aside>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Confirmation -->
+  <section class="checkout-confirm" id="checkoutConfirm" hidden>
+    <div class="wrap" style="max-width:640px; text-align:center;">
+      <svg viewBox="0 0 64 64" fill="none" width="64" height="64" style="margin:0 auto 1.5rem;">
+        <circle cx="32" cy="32" r="30" stroke="#7E8C6E" stroke-width="1.5"/>
+        <path d="M20 32 L28 40 L44 24" stroke="#7E8C6E" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <h2 class="section-title" style="text-align:center;">Commande enregistrée</h2>
+      <p style="color:var(--muted); margin:1rem 0 2rem; font-size:1.05rem;">
+        Merci <strong id="confirmName"></strong>. Votre commande <strong id="confirmNumber"></strong> est bien enregistrée.
+        Nous vous appellerons au <strong id="confirmPhone"></strong> pour confirmer.
+      </p>
+      <div class="checkout-confirm-actions">
+        <a href="/" class="btn-primary">Retour à l'accueil</a>
+        <a href="/boutique.html" class="btn-outline">Voir d'autres cafés</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-bottom">
+      <span>© <span id="year"></span> Real Cafe</span>
+      <span>Torréfié à Tunis</span>
+    </div>
+  </div>
+</footer>
+
+<script type="module">
+  import * as checkout from '/js/features/checkout.js';
+  import * as cart from '/js/features/cart.js';
+  import * as year from '/js/core/year.js';
+
+  year.init();
+  cart.init();
+  checkout.init();
+</script>
+</body>
+</html>

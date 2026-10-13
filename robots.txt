@@ -1,0 +1,17 @@
+# robots.txt — Real Cafe
+# https://realcafe.tn
+
+User-agent: *
+Allow: /
+Disallow: /data/
+Disallow: /admin/
+Disallow: /api/
+
+# Content Signals — préférences IA
+# https://contentsignals.org/
+Content-Signal: ai-train=no, search=yes, ai-input=no
+
+# Sitemap
+Sitemap: https://grain-et-cendre-dusky.vercel.app/sitemap.xml
+# Agent Map — découvrabilité IA
+Agentmap: https://grain-et-cendre-dusky.vercel.app/.well-known/ai-catalog.json

@@ -1,0 +1,85 @@
+{
+  "categories": [
+    {
+      "title": "Cafés",
+      "interactive": true,
+      "items": [
+        {
+          "name": "Espresso",
+          "price": "4,500 DT",
+          "priceDisplay": "4,500",
+          "origin": "Assemblage maison — Éthiopie & Colombie",
+          "altitude": "1700–2200 m",
+          "notes": ["Chocolat noir", "Caramel", "Amande"],
+          "desc": "Notre espresso signature, un assemblage pensé pour l'équilibre : rond en bouche, avec une pointe d'acidité qui s'efface vite."
+        },
+        {
+          "name": "Allongé",
+          "price": "5,000 DT",
+          "priceDisplay": "5,000",
+          "origin": "Assemblage maison — Éthiopie & Colombie",
+          "altitude": "1700–2200 m",
+          "notes": ["Chocolat noir", "Caramel"],
+          "desc": "Le même assemblage que l'espresso, allongé à l'eau chaude pour une tasse plus longue et plus douce."
+        },
+        {
+          "name": "Cappuccino",
+          "price": "7,000 DT",
+          "priceDisplay": "7,000",
+          "origin": "Assemblage maison — Éthiopie & Colombie",
+          "altitude": "1700–2200 m",
+          "notes": ["Chocolat au lait", "Vanille"],
+          "desc": "Espresso et lait texturé en microbulles, servi dans notre céramique maison."
+        },
+        {
+          "name": "Flat White",
+          "price": "7,500 DT",
+          "priceDisplay": "7,500",
+          "origin": "Colombie, Huila",
+          "altitude": "1800–2000 m",
+          "notes": ["Caramel", "Fruits rouges", "Miel"],
+          "desc": "Un lot origine unique, plus doux, servi avec un lait plus fin qu'un cappuccino pour laisser parler le café."
+        },
+        {
+          "name": "Cold Brew",
+          "sub": "infusion à froid, 16h",
+          "price": "8,000 DT",
+          "priceDisplay": "8,000",
+          "origin": "Éthiopie, Guji",
+          "altitude": "1900–2200 m",
+          "notes": ["Pêche", "Jasmin", "Miel"],
+          "desc": "Infusée à froid pendant 16 heures pour une tasse douce et peu acide, sans amertume."
+        },
+        {
+          "name": "Café Turc",
+          "price": "5,500 DT",
+          "priceDisplay": "5,500",
+          "origin": "Assemblage maison, mouture extra-fine",
+          "altitude": "—",
+          "notes": ["Épicé", "Corsé", "Cardamome"],
+          "desc": "Préparé traditionnellement dans notre cezve en cuivre, servi non filtré avec son marc."
+        }
+      ]
+    },
+    {
+      "title": "Thé & infusions",
+      "interactive": false,
+      "items": [
+        { "name": "Thé à la menthe", "price": "5,000" },
+        { "name": "Verveine", "price": "5,000" },
+        { "name": "Karkadé", "sub": "hibiscus, servi glacé l'été", "price": "5,500" },
+        { "name": "Chocolat chaud", "price": "6,500" }
+      ]
+    },
+    {
+      "title": "Douceurs",
+      "interactive": false,
+      "items": [
+        { "name": "Croissant pur beurre", "price": "4,000" },
+        { "name": "Cannelé", "price": "4,500" },
+        { "name": "Makroudh maison", "price": "3,500" },
+        { "name": "Cheesecake basque", "price": "8,000" }
+      ]
+    }
+  ]
+}

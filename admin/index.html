@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Back-office — Real Cafe</title>
+<meta name="robots" content="noindex, nofollow">
+<style>
+  *{box-sizing:border-box;}
+  body{
+    margin:0; background:#17130F; color:#F6EEDD;
+    font-family:'Inter',system-ui,sans-serif; font-size:15px; line-height:1.5;
+  }
+  .wrap{max-width:1100px; margin:0 auto; padding:2rem 1.5rem;}
+  h1{font-family:Georgia,serif; font-weight:600; font-size:1.6rem; margin:0 0 0.4rem;}
+  .sub{color:#B7AB90; font-size:0.9rem; margin-bottom:2rem;}
+  .login{
+    max-width:360px; margin:4rem auto; padding:2rem;
+    border:1px solid rgba(246,238,221,0.18); border-radius:3px;
+    background:#221B14;
+  }
+  .login h2{font-family:Georgia,serif; font-size:1.2rem; margin:0 0 1.2rem;}
+  input{
+    width:100%; padding:0.7rem 0.8rem; background:transparent; color:#F6EEDD;
+    border:1px solid rgba(246,238,221,0.28); border-radius:2px; font:inherit;
+  }
+  input:focus{outline:none; border-color:#E4BC72;}
+  button{
+    margin-top:0.9rem; width:100%; padding:0.7rem 1rem;
+    background:#CE9C49; color:#17130F; font-weight:600;
+    border:1px solid #CE9C49; border-radius:2px; font:inherit; cursor:pointer;
+  }
+  button:hover{background:#E4BC72;}
+  .err{color:#D98A6B; font-size:0.85rem; margin-top:0.6rem; min-height:1.2em;}
+
+  .filters{display:flex; gap:0.8rem; margin-bottom:1.5rem; flex-wrap:wrap; align-items:center;}
+  .filters input, .filters select{
+    width:auto; padding:0.5rem 0.7rem; font-size:0.9rem;
+  }
+  .filters .count{color:#B7AB90; font-size:0.85rem; margin-left:auto;}
+
+  table{width:100%; border-collapse:collapse; font-size:0.9rem;}
+  th, td{padding:0.7rem 0.6rem; text-align:left; border-bottom:1px solid rgba(246,238,221,0.14);}
+  th{color:#B7AB90; font-weight:500; font-size:0.8rem; text-transform:uppercase; letter-spacing:0.04em;}
+  td strong{color:#E4BC72;}
+  tr:hover td{background:rgba(246,238,221,0.03);}
+  .empty{color:#8B8168; padding:2rem 0; text-align:center;}
+  .status{
+    display:inline-block; padding:0.15rem 0.6rem; border-radius:99px;
+    font-size:0.75rem; border:1px solid rgba(246,238,221,0.28);
+  }
+  .status.pending{color:#E4BC72; border-color:#CE9C49;}
+  .status.confirmed{color:#7E8C6E; border-color:#7E8C6E;}
+  .status.cancelled{color:#9A6B54; border-color:#9A6B54;}
+
+  .logout{
+    float:right; color:#B7AB90; font-size:0.85rem; cursor:pointer;
+    background:none; border:none; padding:0.3rem 0;
+  }
+  .actions-cell{position:relative;}
+  .actions{display:flex; gap:0.4rem; margin-top:0.5rem; flex-wrap:wrap;}
+  .action{
+    font-size:0.75rem; font-weight:600;
+    padding:0.25rem 0.6rem;
+    border-radius:2px; cursor:pointer;
+    border:1px solid rgba(246,238,221,0.28);
+    background:transparent; color:#F6EEDD;
+    transition:border-color .2s ease, background-color .2s ease;
+    font-family:inherit;
+  }
+  .action:hover{border-color:#F6EEDD;}
+  .action.confirm{border-color:#7E8C6E; color:#7E8C6E;}
+  .action.confirm:hover{background:rgba(126,140,110,0.1);}
+  .action.cancel{border-color:#9A6B54; color:#9A6B54;}
+  .action.cancel:hover{background:rgba(154,107,84,0.1);}
+  .logout:hover{color:#F6EEDD;}
+</style>
+</head>
+<body>
+
+<!-- ÉCRAN DE CONNEXION -->
+<div class="login" id="loginScreen">
+  <h2>Back-office</h2>
+  <input type="password" id="pwd" placeholder="Mot de passe" autocomplete="current-password">
+  <button id="loginBtn">Entrer</button>
+  <div class="err" id="loginErr"></div>
+</div>
+
+<!-- INTERFACE -->
+<div class="wrap" id="adminScreen" style="display:none;">
+  <button class="logout" id="logoutBtn">Déconnexion</button>
+    <h1>Réservations</h1>
+  <p class="sub">Toutes les demandes reçues via le formulaire du site.</p>
+  <nav style="display:flex; gap:1.2rem; margin-bottom:1.5rem; font-size:0.88rem;">
+    <a href="/admin/" style="color:#E4BC72; font-weight:600; text-decoration:none;">Réservations</a>
+    <a href="/admin/products.html" style="color:#B7AB90; text-decoration:none;">Produits</a>
+    <a href="/admin/orders.html" style="color:#B7AB90; text-decoration:none;">Commandes</a>
+  </nav>
+
+  <div class="filters">
+    <input type="date" id="fFrom" aria-label="À partir du">
+    <input type="date" id="fTo" aria-label="Jusqu'au">
+    <select id="fStatus" aria-label="Statut">
+      <option value="">Tous les statuts</option>
+      <option value="pending">En attente</option>
+      <option value="confirmed">Confirmées</option>
+      <option value="cancelled">Annulées</option>
+    </select>
+    <button id="refreshBtn" style="width:auto;margin:0;">Rafraîchir</button>
+    <span class="count" id="count"></span>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Heure</th>
+        <th>Nom</th>
+        <th>Téléphone</th>
+        <th>Pers.</th>
+        <th>Message</th>
+        <th>Statut</th>
+      </tr>
+    </thead>
+    <tbody id="tbody">
+      <tr><td colspan="7" class="empty">Chargement…</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<script src="/admin/admin.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,114 @@
+{
+  "a11y": { "skip": "Aller au contenu" },
+  "nav": {
+    "coffee": "Le café",
+    "menu": "La carte",
+    "gallery": "Galerie",
+    "reviews": "Avis",
+    "shop": "Boutique",
+    "info": "Infos",
+    "book": "Réserver une table"
+    
+  },
+  "hero": {
+    "status_loading": "Vérification des horaires…",
+    "status_open": "Ouvert maintenant",
+    "status_closed": "Fermé",
+    "title": "Un café qui prend <em>son temps.</em>",
+    "lead": "Grains torréfiés sur place à Tunis, servis par des gens qui aiment ce qu'ils font. Une carte courte, pensée pour être bonne du premier au dernier café de la journée.",
+    "cta_menu": "Voir la carte",
+    "cta_book": "Réserver une table"
+  },
+  "roast": { "label": "En torréfaction cette semaine" },
+  "philo": {
+    "title": "Ce que nous croyons",
+    "note": "Trois torréfactions par semaine, en petites quantités, pour que ce que vous buvez ait été torréfié il y a des jours — pas des mois.",
+    "p1": "Real Cafe est né d'un constat simple : la plupart des cafés servis en ville dorment depuis trop longtemps dans un sac avant d'arriver en tasse. Nous avons choisi l'inverse — un torréfacteur dans l'arrière-boutique, des lots achetés en direct auprès de coopératives en Éthiopie et en Colombie, et une carte qui change avec les récoltes plutôt qu'avec les modes.",
+    "p2": "Rien n'est pressé ici. Le café passe le temps qu'il faut en machine, le lait est versé lentement, et les tables ne se libèrent que lorsque la conversation est finie.",
+    "quote": "Le bon café ne se boit pas vite.",
+    "quote_author": "— Amine, torréfacteur, Real Cafe",
+    "stop1_title": "Le terroir",
+    "stop1_text": "Nos deux origines actuelles viennent d'Éthiopie (Guji, 1900–2200 m) et de Colombie (Huila, 1800–2000 m), achetées en direct auprès de coopératives que nous visitons chaque année.",
+    "stop2_title": "La torréfaction",
+    "stop2_text": "Chaque lot est torréfié sur place, trois fois par semaine, dans notre torréfacteur à tambour installé derrière le comptoir.",
+    "stop3_title": "La tasse",
+    "stop3_text": "Avant de rejoindre la carte, chaque torréfaction est goûtée en salle par l'équipe, à la recherche d'un équilibre entre acidité et douceur.",
+    "taste1": "Fruité",
+    "taste2": "Floral",
+    "taste3": "Chocolat noir"
+  },
+  "menu": {
+    "title": "La carte",
+    "note": "Prix en dinars tunisiens, service compris. Touchez un café pour voir son origine."
+  },
+  "brew": {
+    "title": "Brew guide",
+    "note": "Le bon ratio pour la bonne méthode. Choisissez votre dose, on s'occupe du reste.",
+    "dose_label": "Dose de café",
+    "res_water": "Eau",
+    "res_ratio": "Ratio",
+    "res_time": "Temps",
+    "res_grind": "Mouture"
+  },
+"video": {
+  "title": "En mouvement",
+  "note": "Quelques secondes dans nos journées — la torréfaction, le service, et ce silence particulier du matin.",
+  "play": "Lancer la vidéo"
+},
+  "gallery": {
+    "title": "L'ambiance",
+    "note": "Un aperçu du lieu — comptoir en chêne, torréfacteur apparent, et une terrasse ouverte sur la rue.",
+    "tile1": "Le comptoir",
+    "tile2": "Le torréfacteur",
+    "tile3": "La terrasse",
+    "tile4": "Grains fraîchement torréfiés",
+    "tile5": "Le service du matin",
+    "jasmine": "Le soir, on sert parfois quelques brins de jasmin avec le café turc."
+  },
+  "reviews": {
+    "title": "Ce qu'on en dit",
+    "r1_text": "Le seul endroit du quartier où je sens vraiment la différence entre un café torréfié il y a trois jours et un café torréfié il y a trois mois.",
+    "r1_author": "Sarra B. — habituée",
+    "r2_text": "La terrasse le matin, le café turc, et personne qui vous presse de partir. Exactement ce qu'il me fallait entre deux réunions.",
+    "r2_author": "Yassine K. — client régulier",
+    "r3_text": "Le makroudh maison à côté d'un flat white, c'est le genre de mélange qu'on ne trouve nulle part ailleurs en ville.",
+    "r3_author": "Nour A. — de passage"
+  },
+  "carnets": {
+    "title": "Carnets",
+    "note": "Ce qu'on écrit entre deux services — portraits, méthodes, recettes."
+  },
+  "info": {
+    "title": "Infos pratiques",
+    "hours_title": "Horaires",
+    "hours_mon_thu": "Lundi — Jeudi",
+    "hours_fri_sat": "Vendredi — Samedi",
+    "hours_sun": "Dimanche",
+    "address_title": "Adresse",
+    "address_street": "12 Rue de la Casbah",
+    "address_city": "Tunis 1006, Tunisie",
+    "map_link": "Itinéraire →"
+  },
+  "resa": {
+    "title": "Réserver une table",
+    "note": "Pour les groupes de plus de 6 personnes ou les demandes de dernière minute, un appel reste plus sûr qu'un formulaire.",
+    "field_name": "Nom",
+    "placeholder_name": "Votre nom",
+    "field_phone": "Téléphone",
+    "field_date": "Date",
+    "field_time": "Heure",
+    "field_guests": "Nombre de personnes",
+    "field_message": "Message (optionnel)",
+    "submit": "Confirmer la réservation",
+    "success_title": "Réservation enregistrée",
+    "reset": "Faire une nouvelle réservation"
+  },
+  "float_cta": {
+    "label": "Réserver",
+    "darija": "nchoufou ?"
+  },
+  "footer": {
+    "address": "12 Rue de la Casbah, Tunis. Ouvert tous les jours dès 07h00.",
+    "made_in": "Torréfié à Tunis"
+  }
+}

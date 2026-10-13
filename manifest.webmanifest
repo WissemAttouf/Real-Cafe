@@ -1,0 +1,58 @@
+{
+  "name": "Real Cafe — Café de spécialité, Tunis",
+  "short_name": "Real Cafe",
+  "description": "Grains torréfiés sur place à Tunis. Carte courte, terrasse ouverte sur la rue de la Casbah.",
+  "lang": "fr",
+  "dir": "ltr",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#17130F",
+  "theme_color": "#17130F",
+  "categories": ["food", "lifestyle"],
+  "icons": [
+    {
+      "src": "/assets/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/icons/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/assets/icons/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Réserver une table",
+      "short_name": "Réserver",
+      "url": "/#reservation",
+      "icons": [
+        { "src": "/assets/icons/icon-192.png", "sizes": "192x192" }
+      ]
+    },
+    {
+      "name": "Voir la carte",
+      "short_name": "Carte",
+      "url": "/#carte",
+      "icons": [
+        { "src": "/assets/icons/icon-192.png", "sizes": "192x192" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Grain & Cendre — Café de spécialité, Tunis</title>
+<meta name="description" content="Café de spécialité à Tunis. Grains torréfiés sur place trois fois par semaine, carte courte, terrasse ouverte sur la rue de la Casbah. Réservation en ligne.">
+<link rel="canonical" href="https://grainetcendre.tn/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_TN">
+<meta property="og:site_name" content="Grain & Cendre">
+<meta property="og:title" content="Grain & Cendre — Café de spécialité, Tunis">
+<meta property="og:description" content="Grains torréfiés sur place à Tunis. Une carte courte, pensée pour être bonne du premier au dernier café de la journée.">
+<meta property="og:url" content="https://grainetcendre.tn/">
+<meta property="og:image" content="https://grainetcendre.tn/assets/og-cover.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Comptoir en chêne de Grain & Cendre, Tunis">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Grain & Cendre — Café de spécialité, Tunis">
+<meta name="twitter:description" content="Grains torréfiés sur place à Tunis. Une carte courte, pensée pour être bonne du premier au dernier café de la journée.">
+<meta name="twitter:image" content="https://grainetcendre.tn/assets/og-cover.jpg">
+
+<!-- Theme -->
+<meta name="theme-color" content="#17130F">
+
+<!-- Favicon jasmin -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%2317130F'/%3E%3Cg transform='translate(16 16)' stroke='%23E4BC72' stroke-width='1.4' fill='none' stroke-linecap='round'%3E%3Ccircle r='2'/%3E%3Cpath d='M0 -2 C 2 -6, 6 -6, 8 -4'/%3E%3Cpath d='M0 -2 C 2 -6, 6 -6, 8 -4' transform='rotate(72)'/%3E%3Cpath d='M0 -2 C 2 -6, 6 -6, 8 -4' transform='rotate(144)'/%3E%3Cpath d='M0 -2 C 2 -6, 6 -6, 8 -4' transform='rotate(216)'/%3E%3Cpath d='M0 -2 C 2 -6, 6 -6, 8 -4' transform='rotate(288)'/%3E%3C/g%3E%3C/svg%3E">
+
+<!-- Polices auto-hébergées -->
+<link rel="preload" href="/assets/fonts/fraunces-variable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/inter-variable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/styles.css">
+
+<!-- JSON-LD schema.org -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CafeOrCoffeeShop",
+  "name": "Grain & Cendre",
+  "alternateName": "قهوة",
+  "image": "https://grainetcendre.tn/assets/og-cover.jpg",
+  "url": "https://grainetcendre.tn/",
+  "telephone": "+21671234567",
+  "priceRange": "$$",
+  "servesCuisine": ["Café de spécialité", "Pâtisserie"],
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "12 Rue de la Casbah",
+    "addressLocality": "Tunis",
+    "postalCode": "1006",
+    "addressCountry": "TN"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 36.7984,
+    "longitude": 10.1710
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday"],
+      "opens": "07:00",
+      "closes": "21:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Friday","Saturday"],
+      "opens": "07:00",
+      "closes": "22:30"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Sunday",
+      "opens": "08:00",
+      "closes": "20:00"
+    }
+  ],
+  "sameAs": [
+    "https://www.instagram.com/grainetcendre",
+    "https://www.facebook.com/grainetcendre"
+  ]
+}
+</script>
+</head>
+<body>
+
+<a href="#main" class="skip-link">Aller au contenu</a>
+
+<header id="siteHeader">
+  <nav class="wrap">
+    <a href="#home" class="logo">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><ellipse cx="12" cy="12" rx="9" ry="10" stroke="currentColor" stroke-width="1.4"/><path d="M12 2.5C9 6 9 18 12 21.5" stroke="currentColor" stroke-width="1.4"/></svg>
+      Grain & Cendre
+      <span class="ar" lang="ar" dir="rtl">قهوة</span>
+    </a>
+    <div class="nav-links">
+      <a href="#philosophie">Le café</a>
+      <a href="#carte">La carte</a>
+      <a href="#galerie">Galerie</a>
+      <a href="#avis">Avis</a>
+      <a href="#infos">Infos</a>
+    </div>
+    <button class="lang-toggle" id="langToggle" aria-label="Changer de langue">
+      <span class="lang-current">FR</span>
+      <span class="lang-sep">·</span>
+      <span class="lang-other">ع</span>
+    </button>
+    <a href="#reservation" class="nav-cta">Réserver une table</a>
+    <button class="burger" id="burgerBtn" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
+
+<div class="mobile-panel" id="mobilePanel">
+  <a href="#philosophie">Le café</a>
+  <a href="#carte">La carte</a>
+  <a href="#galerie">Galerie</a>
+  <a href="#avis">Avis</a>
+  <a href="#infos">Infos</a>
+  <a href="#reservation" class="nav-cta">Réserver une table</a>
+  <div class="ar" lang="ar" dir="rtl">قهوة</div>
+</div>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="wrap">
+      <div>
+        <div class="hero-status">
+          <span class="dot" id="statusDot"></span>
+          <span id="statusText">Vérification des horaires…</span>
+        </div>
+        <h1>Un café qui prend <em>son temps.</em></h1>
+        <p class="lead">Grains torréfiés sur place à Tunis, servis par des gens qui aiment ce qu'ils font. Une carte courte, pensée pour être bonne du premier au dernier café de la journée.</p>
+        <div class="hero-ctas">
+          <a href="#carte" class="btn-primary">Voir la carte</a>
+          <a href="#reservation" class="btn-outline">Réserver une table</a>
+        </div>
+      </div>
+      <div class="hero-art">
+        <div class="moucharabieh-screen" id="moucharabieh" aria-hidden="true" data-parallax="15">
+          <div class="layer-outer">
+            <svg viewBox="0 0 400 400" fill="none">
+              <defs>
+                <pattern id="mchrbLarge" width="68" height="68" patternUnits="userSpaceOnUse">
+                  <path d="M34 2 L66 34 L34 66 L2 34 Z" stroke="#F6EEDD" stroke-width="1" fill="none"/>
+                  <path d="M34 18 L50 34 L34 50 L18 34 Z" stroke="#F6EEDD" stroke-width="1" fill="none"/>
+                </pattern>
+                <radialGradient id="mchrbMaskLarge" cx="50%" cy="50%" r="50%">
+                  <stop offset="0%" stop-color="#fff" stop-opacity="1"/>
+                  <stop offset="55%" stop-color="#fff" stop-opacity="0.75"/>
+                  <stop offset="100%" stop-color="#fff" stop-opacity="0"/>
+                </radialGradient>
+                <mask id="mchrbMaskOuter">
+                  <circle cx="200" cy="200" r="188" fill="url(#mchrbMaskLarge)"/>
+                </mask>
+              </defs>
+              <rect x="0" y="0" width="400" height="400" fill="url(#mchrbLarge)" mask="url(#mchrbMaskOuter)" opacity="0.10"/>
+            </svg>
+          </div>
+          <div class="layer-inner">
+            <svg viewBox="0 0 400 400" fill="none">
+              <defs>
+                <radialGradient id="screenGlow" cx="50%" cy="48%" r="60%">
+                  <stop offset="0%" stop-color="#CE9C49" stop-opacity="0.35"/>
+                  <stop offset="100%" stop-color="#CE9C49" stop-opacity="0"/>
+                </radialGradient>
+                <pattern id="mchrbFine" width="34" height="34" patternUnits="userSpaceOnUse">
+                  <path d="M17 1 L33 17 L17 33 L1 17 Z" stroke="#F6EEDD" stroke-width="1" fill="none"/>
+                  <path d="M17 9 L25 17 L17 25 L9 17 Z" stroke="#F6EEDD" stroke-width="1" fill="none"/>
+                </pattern>
+                <radialGradient id="mchrbMaskFine" cx="50%" cy="50%" r="50%">
+                  <stop offset="0%" stop-color="#fff" stop-opacity="1"/>
+                  <stop offset="60%" stop-color="#fff" stop-opacity="0.6"/>
+                  <stop offset="100%" stop-color="#fff" stop-opacity="0"/>
+                </radialGradient>
+                <mask id="mchrbMaskInner">
+                  <circle cx="200" cy="200" r="188" fill="url(#mchrbMaskFine)"/>
+                </mask>
+              </defs>
+              <circle cx="200" cy="200" r="188" fill="url(#screenGlow)"/>
+              <rect x="0" y="0" width="400" height="400" fill="url(#mchrbFine)" mask="url(#mchrbMaskInner)" opacity="0.22"/>
+            </svg>
+          </div>
+        </div>
+        <svg class="cup-illustration" viewBox="0 0 320 320" fill="none" aria-hidden="true">
+          <path class="steam-line s1" d="M130 90 C 120 75, 140 65, 130 50" />
+          <path class="steam-line s2" d="M160 90 C 150 75, 170 65, 160 50" />
+          <path class="steam-line s3" d="M190 90 C 180 75, 200 65, 190 50" />
+          <ellipse cx="160" cy="215" rx="118" ry="14" stroke="#B7AB90" stroke-width="1.2" opacity="0.35"/>
+          <path d="M75 150 h170 l-14 78 a20 20 0 0 1 -20 17 H109 a20 20 0 0 1 -20 -17 Z" stroke="#E4BC72" stroke-width="2"/>
+          <path d="M245 165 q34 4 34 30 q0 26 -34 26" stroke="#B7AB90" stroke-width="2" fill="none"/>
+          <line x1="75" y1="150" x2="245" y2="150" stroke="#CE9C49" stroke-width="2.4"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- BANDEAU TORRÉFACTION — rempli par main.js depuis data/roast.json -->
+  <div class="roast-ticker" role="status" aria-live="polite">
+    <div class="wrap roast-ticker-inner">
+      <span class="roast-dot" aria-hidden="true"></span>
+      <span class="roast-label">En torréfaction cette semaine</span>
+      <span class="roast-sep" aria-hidden="true">·</span>
+      <span class="roast-origin" id="roastOrigin">Chargement…</span>
+      <span class="roast-sep" aria-hidden="true">·</span>
+      <span class="roast-meta" id="roastMeta"></span>
+    </div>
+  </div>
+
+  <!-- PHILOSOPHIE -->
+  <section class="section-pad" id="philosophie">
+    <div class="wrap">
+      <div class="eyebrow-row reveal">
+        <h2 class="section-title">Ce que nous croyons</h2>
+        <p class="section-note">Trois torréfactions par semaine, en petites quantités, pour que ce que vous buvez ait été torréfié il y a des jours — pas des mois.</p>
+      </div>
+      <div class="philo-grid reveal">
+        <div>
+          <p>Grain & Cendre est né d'un constat simple&nbsp;: la plupart des cafés servis en ville dorment depuis trop longtemps dans un sac avant d'arriver en tasse. Nous avons choisi l'inverse — un torréfacteur dans l'arrière-boutique, des lots achetés en direct auprès de coopératives en Éthiopie et en Colombie, et une carte qui change avec les récoltes plutôt qu'avec les modes.</p>
+          <p>Rien n'est pressé ici. Le café passe le temps qu'il faut en machine, le lait est versé lentement, et les tables ne se libèrent que lorsque la conversation est finie.</p>
+        </div>
+        <blockquote>
+          Le bon café ne se boit pas vite.
+          <cite>— Amine, torréfacteur, Grain & Cendre</cite>
+        </blockquote>
+      </div>
+
+      <div class="scrolly reveal">
+        <div class="scrolly-visual">
+          <div class="scrolly-frame">
+            <svg class="frame-illustration frame-terroir active" viewBox="0 0 300 280" fill="none" aria-hidden="true">
+              <circle cx="90" cy="150" r="5" fill="#E4BC72"/>
+              <text x="90" y="130" text-anchor="middle" font-family="Inter" font-size="11" fill="#B7AB90">Éthiopie</text>
+              <circle cx="205" cy="185" r="5" fill="#E4BC72"/>
+              <text x="205" y="207" text-anchor="middle" font-family="Inter" font-size="11" fill="#B7AB90">Colombie</text>
+              <path d="M90 150 Q150 60 205 185" stroke="#8B8168" stroke-width="1.2" stroke-dasharray="3 5" fill="none"/>
+              <circle cx="150" cy="150" r="3" fill="#CE9C49"/>
+              <text x="150" y="170" text-anchor="middle" font-family="Inter" font-size="10" fill="#8B8168">Grain & Cendre</text>
+              <circle cx="150" cy="150" r="95" stroke="#3A3122" stroke-width="1"/>
+            </svg>
+            <svg class="frame-illustration frame-torrefaction" viewBox="0 0 300 280" fill="none" aria-hidden="true">
+              <rect x="95" y="90" width="110" height="90" rx="45" stroke="#E4BC72" stroke-width="2"/>
+              <circle cx="150" cy="135" r="26" stroke="#B7AB90" stroke-width="1.4"/>
+              <rect x="205" y="125" width="26" height="20" rx="4" stroke="#B7AB90" stroke-width="1.4"/>
+              <path class="steam-line s1" d="M120 88 C 112 76, 128 68, 120 54" stroke="#B7AB90"/>
+              <path class="steam-line s2" d="M150 88 C 142 76, 158 68, 150 54" stroke="#B7AB90"/>
+              <path class="steam-line s3" d="M180 88 C 172 76, 188 68, 180 54" stroke="#B7AB90"/>
+              <path d="M95 200 A55 14 0 0 0 205 200" stroke="#8B8168" stroke-width="1" opacity="0.5"/>
+            </svg>
+            <svg class="frame-illustration frame-tasse" viewBox="0 0 300 280" fill="none" aria-hidden="true">
+              <path d="M108 130 h84 l-7 55 a12 12 0 0 1 -12 10 H127 a12 12 0 0 1 -12 -10 Z" stroke="#E4BC72" stroke-width="2"/>
+              <path d="M192 138 q22 2 22 20 q0 18 -22 18" stroke="#B7AB90" stroke-width="1.6" fill="none"/>
+              <ellipse cx="150" cy="130" rx="42" ry="7" stroke="#B7AB90" stroke-width="1.2" opacity="0.4"/>
+              <rect x="70" y="60" width="62" height="22" rx="11" stroke="#8B8168" stroke-width="1"/>
+              <text x="101" y="75" text-anchor="middle" font-family="Inter" font-size="9" fill="#8B8168">Fruité</text>
+              <rect x="150" y="45" width="72" height="22" rx="11" stroke="#8B8168" stroke-width="1"/>
+              <text x="186" y="60" text-anchor="middle" font-family="Inter" font-size="9" fill="#8B8168">Floral</text>
+            </svg>
+          </div>
+          <div class="scrolly-dots" role="tablist" aria-label="Étapes de la graine à la tasse">
+            <button type="button" class="s-dot active" data-target="stop-terroir" aria-label="Étape 1 : le terroir"></button>
+            <button type="button" class="s-dot" data-target="stop-torrefaction" aria-label="Étape 2 : la torréfaction"></button>
+            <button type="button" class="s-dot" data-target="stop-tasse" aria-label="Étape 3 : la tasse"></button>
+          </div>
+        </div>
+
+        <div class="scrolly-stops">
+          <div class="scrolly-stop" id="stop-terroir" data-frame="frame-terroir">
+            <div class="num">01</div>
+            <h3>Le terroir</h3>
+            <p>Nos deux origines actuelles viennent d'Éthiopie (Guji, 1900–2200&nbsp;m) et de Colombie (Huila, 1800–2000&nbsp;m), achetées en direct auprès de coopératives que nous visitons chaque année. Pas d'intermédiaire, pas de contrat figé — juste le meilleur lot disponible, saison après saison.</p>
+          </div>
+          <div class="scrolly-stop" id="stop-torrefaction" data-frame="frame-torrefaction">
+            <div class="num">02</div>
+            <h3>La torréfaction</h3>
+            <p>Chaque lot est torréfié sur place, trois fois par semaine, dans notre torréfacteur à tambour installé derrière le comptoir. Les courbes sont ajustées à chaque origine — jamais la même recette pour deux cafés différents.</p>
+          </div>
+          <div class="scrolly-stop" id="stop-tasse" data-frame="frame-tasse">
+            <div class="num">03</div>
+            <h3>La tasse</h3>
+            <p>Avant de rejoindre la carte, chaque torréfaction est goûtée en salle par l'équipe, à la recherche d'un équilibre entre acidité et douceur.</p>
+            <div class="taste-pills">
+              <span>Fruité</span><span>Floral</span><span>Chocolat noir</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="zellige-sep" aria-hidden="true"></div>
+
+  <!-- CARTE — remplie par main.js depuis data/menu.json -->
+  <section class="carte section-pad" id="carte">
+    <div class="wrap">
+      <div class="eyebrow-row reveal">
+        <h2 class="section-title">La carte</h2>
+        <p class="section-note">Prix en dinars tunisiens, service compris. Touchez un café pour voir son origine.</p>
+      </div>
+      <div class="menu-grid reveal" id="menuGrid">
+        <!-- Contenu injecté par main.js -->
+      </div>
+    </div>
+  </section>
+  <!-- BREW GUIDE — Calculateur de dosage -->
+  <section class="brew section-pad" id="brew">
+    <div class="wrap">
+      <div class="eyebrow-row reveal">
+        <h2 class="section-title">Brew guide</h2>
+        <p class="section-note">Le bon ratio pour la bonne méthode. Choisissez votre dose, on s'occupe du reste.</p>
+      </div>
+
+      <div class="brew-grid reveal">
+
+        <div class="brew-methods" role="tablist" aria-label="Méthodes d'extraction">
+          <button type="button" class="brew-method active" role="tab" aria-selected="true" data-method="v60">
+            <span class="brew-method-name">V60</span>
+            <span class="brew-method-ratio">1:16</span>
+          </button>
+          <button type="button" class="brew-method" role="tab" aria-selected="false" data-method="press">
+            <span class="brew-method-name">French press</span>
+            <span class="brew-method-ratio">1:12</span>
+          </button>
+          <button type="button" class="brew-method" role="tab" aria-selected="false" data-method="cold">
+            <span class="brew-method-name">Cold brew</span>
+            <span class="brew-method-ratio">1:8</span>
+          </button>
+        </div>
+
+        <div class="brew-panel">
+          <div class="brew-input">
+            <label for="brewDose">Dose de café</label>
+            <div class="brew-dose-row">
+              <input type="range" id="brewDose" min="8" max="60" step="1" value="20" aria-describedby="brewDoseValue">
+              <output id="brewDoseValue" for="brewDose">20 g</output>
+            </div>
+          </div>
+
+          <div class="brew-results" aria-live="polite">
+            <div class="brew-result">
+              <span class="brew-result-label">Eau</span>
+              <span class="brew-result-value" id="brewWater">320 mL</span>
+            </div>
+            <div class="brew-result">
+              <span class="brew-result-label">Ratio</span>
+              <span class="brew-result-value" id="brewRatio">1:16</span>
+            </div>
+            <div class="brew-result">
+              <span class="brew-result-label">Temps</span>
+              <span class="brew-result-value" id="brewTime">2 min 30</span>
+            </div>
+            <div class="brew-result">
+              <span class="brew-result-label">Mouture</span>
+              <span class="brew-result-value" id="brewGrind">Moyenne</span>
+            </div>
+          </div>
+
+          <p class="brew-note" id="brewNote">Versez en spirale, en trois temps. Laissez s'égoutter complètement avant de servir.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <div class="zellige-sep alt" aria-hidden="true"></div>
+
+  <!-- GALERIE -->
+  <section class="section-pad" id="galerie">
+    <div class="wrap">
+      <div class="eyebrow-row reveal">
+        <h2 class="section-title">L'ambiance</h2>
+        <p class="section-note">Un aperçu du lieu — comptoir en chêne, torréfacteur apparent, et une terrasse ouverte sur la rue.</p>
+      </div>
+      <div class="gallery-grid reveal">
+        <div class="g-tile g1"><span>Le comptoir</span></div>
+        <div class="g-tile g2"><span>Le torréfacteur</span></div>
+        <div class="g-tile g3"><span>La terrasse</span></div>
+        <div class="g-tile g4"><span>Grains fraîchement torréfiés</span></div>
+        <div class="g-tile g5"><span>Le service du matin</span></div>
+      </div>
+      <p class="jasmine-bullet reveal">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <circle cx="12" cy="12" r="2" stroke="#E4BC72" stroke-width="1.2"/>
+          <path d="M12 10 C 13 7, 16 7, 17 9" stroke="#E4BC72" stroke-width="1.2" stroke-linecap="round"/>
+          <path d="M12 10 C 13 7, 16 7, 17 9" stroke="#E4BC72" stroke-width="1.2" stroke-linecap="round" transform="rotate(72 12 12)"/>
+          <path d="M12 10 C 13 7, 16 7, 17 9" stroke="#E4BC72" stroke-width="1.2" stroke-linecap="round" transform="rotate(144 12 12)"/>
+          <path d="M12 10 C 13 7, 16 7, 17 9" stroke="#E4BC72" stroke-width="1.2" stroke-linecap="round" transform="rotate(216 12 12)"/>
+          <path d="M12 10 C 13 7, 16 7, 17 9" stroke="#E4BC72" stroke-width="1.2" stroke-linecap="round" transform="rotate(288 12 12)"/>
+        </svg>
+        Le soir, on sert parfois quelques brins de jasmin avec le café turc.
+      </p>
+    </div>
+  </section>
+
+  <div class="zellige-sep" aria-hidden="true"></div>
+
+  <!-- AVIS -->
+  <section class="section-pad" id="avis">
+    <div class="wrap">
+      <div class="eyebrow-row reveal">
+        <h2 class="section-title">Ce qu'on en dit</h2>
+      </div>
+      <div class="avis-row reveal">
+        <div class="avis-card">
+          <div class="mark">”</div>
+          <p>Le seul endroit du quartier où je sens vraiment la différence entre un café torréfié il y a trois jours et un café torréfié il y a trois mois.</p>
+          <span class="who">Sarra B. — habituée</span>
+        </div>
+        <div class="avis-card">
+          <div class="mark">”</div>
+          <p>La terrasse le matin, le café turc, et personne qui vous presse de partir. Exactement ce qu'il me fallait entre deux réunions.</p>
+          <span class="who">Yassine K. — client régulier</span>
+        </div>
+        <div class="avis-card">
+          <div class="mark">”</div>
+          <p>Le makroudh maison à côté d'un flat white, c'est le genre de mélange qu'on ne trouve nulle part ailleurs en ville.</p>
+          <span class="who">Nour A. — de passage</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- CARNETS — journal éditorial -->
+  <section class="section-pad" id="carnets">
+    <div class="wrap">
+      <div class="eyebrow-row reveal">
+        <h2 class="section-title">Carnets</h2>
+        <p class="section-note">Ce qu'on écrit entre deux services — portraits, méthodes, recettes.</p>
+      </div>
+      <div class="carnets-grid reveal" id="carnetsGrid">
+        <!-- Chargé depuis data/carnets.json -->
+      </div>
+    </div>
+  </section>
+
+  <div class="zellige-sep" aria-hidden="true"></div>
+  <!-- INFOS — PALETTE SIDI BOU SAID -->
+  <section class="infos section-pad" id="infos">
+    <div class="wrap">
+      <div class="eyebrow-row reveal">
+        <h2 class="section-title">Infos pratiques</h2>
+      </div>
+      <div class="infos-grid reveal">
+        <div>
+          <h3>Horaires</h3>
+          <table class="hours-table">
+            <tr><td>Lundi — Jeudi</td><td>07h00 – 21h00</td></tr>
+            <tr><td>Vendredi — Samedi</td><td>07h00 – 22h30</td></tr>
+            <tr><td>Dimanche</td><td>08h00 – 20h00</td></tr>
+          </table>
+        </div>
+                <div class="addr">
+          <h3>Adresse</h3>
+          <p>12 Rue de la Casbah</p>
+          <p>Tunis 1006, Tunisie</p>
+          <p>+216 71 234 567</p>
+
+          <div class="neighborhood-map" aria-hidden="true">
+            <svg viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <!-- Fond de la carte -->
+              <rect x="0" y="0" width="400" height="300" fill="none"/>
+
+              <!-- Trame de rues (petites lignes fines) -->
+              <g stroke="#F2EFE6" stroke-width="0.4" opacity="0.15">
+                <path d="M0 60 L400 55"/>
+                <path d="M0 120 L400 118"/>
+                <path d="M0 180 L400 185"/>
+                <path d="M0 240 L400 245"/>
+                <path d="M60 0 L55 300"/>
+                <path d="M140 0 L135 300"/>
+                <path d="M220 0 L225 300"/>
+                <path d="M300 0 L305 300"/>
+              </g>
+
+              <!-- Médina (grande forme arrondie à droite) -->
+              <path d="M230 40 Q290 20 340 60 Q370 100 355 160 Q340 220 290 250 Q240 275 200 240 Q170 200 180 140 Q190 80 230 40 Z"
+                    stroke="#F2EFE6" stroke-width="0.8" fill="none" opacity="0.35"/>
+              <text x="265" y="150" text-anchor="middle" font-family="Inter" font-size="10" fill="#F2EFE6" opacity="0.5" letter-spacing="0.1em">MÉDINA</text>
+
+              <!-- Rue de la Casbah (diagonale principale) -->
+              <path d="M40 240 Q120 180 180 130 Q230 90 290 70"
+                    stroke="#E4BC72" stroke-width="1.2" fill="none" opacity="0.5" stroke-dasharray="4 3"/>
+              <text x="130" y="200" font-family="Inter" font-size="8.5" fill="#E4BC72" opacity="0.7" transform="rotate(-25 130 200)">Rue de la Casbah</text>
+
+              <!-- Bab El Bhar (repère en bas) -->
+              <circle cx="70" cy="255" r="3" fill="none" stroke="#F2EFE6" stroke-width="0.8" opacity="0.5"/>
+              <text x="78" y="258" font-family="Inter" font-size="8" fill="#F2EFE6" opacity="0.4">Bab El Bhar</text>
+
+              <!-- Souk (petit rectangle) -->
+              <rect x="290" y="100" width="20" height="14" stroke="#F2EFE6" stroke-width="0.6" fill="none" opacity="0.3"/>
+              <text x="300" y="95" text-anchor="middle" font-family="Inter" font-size="7.5" fill="#F2EFE6" opacity="0.4">Souk</text>
+
+              <!-- Mosquée Zitouna (petit symbole) -->
+              <path d="M255 175 Q260 165 265 175 L265 185 L255 185 Z" stroke="#F2EFE6" stroke-width="0.6" fill="none" opacity="0.4"/>
+              <text x="260" y="198" text-anchor="middle" font-family="Inter" font-size="7.5" fill="#F2EFE6" opacity="0.4">Zitouna</text>
+
+              <!-- Marqueur Grain & Cendre -->
+              <g transform="translate(180 130)">
+                <!-- Halo pulsant -->
+                <circle cx="0" cy="0" r="14" fill="#CE9C49" opacity="0.15">
+                  <animate attributeName="r" values="8;20;8" dur="3s" repeatCount="indefinite"/>
+                  <animate attributeName="opacity" values="0.25;0;0.25" dur="3s" repeatCount="indefinite"/>
+                </circle>
+                <!-- Point central -->
+                <circle cx="0" cy="0" r="4.5" fill="#E4BC72"/>
+                <circle cx="0" cy="0" r="7" stroke="#E4BC72" stroke-width="1" fill="none" opacity="0.5"/>
+                <!-- Étiquette -->
+                <text x="0" y="-16" text-anchor="middle" font-family="Georgia,serif" font-size="9" fill="#F2EFE6" font-style="italic" opacity="0.9">Grain &amp; Cendre</text>
+              </g>
+
+              <!-- Compas (boussole en haut à gauche) -->
+              <g transform="translate(30 30)" opacity="0.4">
+                <circle cx="0" cy="0" r="9" stroke="#F2EFE6" stroke-width="0.6" fill="none"/>
+                <path d="M0 -7 L2 0 L0 7 L-2 0 Z" fill="#F2EFE6"/>
+                <text x="0" y="-13" text-anchor="middle" font-family="Inter" font-size="7" fill="#F2EFE6">N</text>
+              </g>
+            </svg>
+          </div>
+
+          <a class="maps-link" href="https://www.google.com/maps/search/?api=1&query=Rue+de+la+Casbah+Tunis" target="_blank" rel="noopener">
+            Itinéraire →
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESERVATION -->
+  <section class="section-pad" id="reservation">
+    <div class="wrap">
+      <div class="resa-wrap">
+        <div class="resa-copy reveal">
+          <h2 class="section-title">Réserver une table</h2>
+          <p>Pour les groupes de plus de 6 personnes ou les demandes de dernière minute, un appel reste plus sûr qu'un formulaire.</p>
+          <a class="tel" href="tel:+21671234567">+216 71 234 567</a>
+        </div>
+
+        <div class="reveal">
+          <form id="resaForm" novalidate>
+            <div class="field">
+              <label for="f-name">Nom</label>
+              <input id="f-name" name="name" type="text" placeholder="Votre nom" autocomplete="name">
+              <span class="err" data-err="name" aria-live="polite"></span>
+            </div>
+            <div class="field">
+              <label for="f-phone">Téléphone</label>
+              <input id="f-phone" name="phone" type="tel" placeholder="+216 ..." autocomplete="tel">
+              <span class="err" data-err="phone" aria-live="polite"></span>
+            </div>
+            <div class="field">
+              <label for="f-date">Date</label>
+              <input id="f-date" name="date" type="date">
+              <span class="err" data-err="date" aria-live="polite"></span>
+            </div>
+            <div class="field">
+              <label for="f-time">Heure</label>
+              <input id="f-time" name="time" type="time">
+              <span class="err" data-err="time" aria-live="polite"></span>
+            </div>
+            <div class="field">
+              <label for="f-guests">Nombre de personnes</label>
+              <select id="f-guests" name="guests">
+                <option value="1">1 personne</option>
+                <option value="2" selected>2 personnes</option>
+                <option value="3">3 personnes</option>
+                <option value="4">4 personnes</option>
+                <option value="5">5 personnes</option>
+                <option value="6">6 personnes</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="f-note">&nbsp;</label>
+            </div>
+            <div class="field full">
+              <label for="f-message">Message (optionnel)</label>
+              <textarea id="f-message" name="message" placeholder="Une préférence de table, une occasion à souligner…"></textarea>
+            </div>
+            <!-- Honeypot anti-bot : invisible pour l'humain, rempli par les bots -->
+            <div class="hp-field" aria-hidden="true">
+              <label for="f-website">Site web (ne pas remplir)</label>
+              <input id="f-website" name="website" type="text" tabindex="-1" autocomplete="off">
+            </div>
+            <div class="submit-row">
+              <button type="submit" class="btn-primary">Confirmer la réservation</button>
+            </div>
+          </form>
+
+          <div class="confirm" id="confirmBox">
+            <h3>Réservation enregistrée</h3>
+            <p id="confirmText"></p>
+            <a href="#" class="reset" id="resetForm">Faire une nouvelle réservation</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<div class="menu-panel-backdrop" id="menuBackdrop"></div>
+<aside class="menu-panel" id="menuPanel" role="dialog" aria-modal="true" aria-labelledby="panelName" aria-hidden="true">
+  <button type="button" class="panel-close" id="panelClose" aria-label="Fermer">✕</button>
+  <div class="panel-content">
+    <p class="panel-price" id="panelPrice"></p>
+    <h3 id="panelName"></h3>
+    <div class="panel-meta" id="panelMeta"></div>
+    <div class="panel-notes" id="panelNotes"></div>
+    <p class="panel-desc" id="panelDesc"></p>
+    <p class="panel-footer">Torréfié sur place · 3×/semaine</p>
+  </div>
+</aside>
+
+<a href="#reservation" class="float-reserve" id="floatReserve" aria-label="Réserver une table">
+  <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" width="16" height="16">
+    <rect x="3" y="5" width="18" height="16" rx="2" stroke="currentColor" stroke-width="1.6"/>
+    <path d="M3 10h18M8 3v4M16 3v4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+  </svg>
+  <span class="float-reserve-label">
+    <span class="float-reserve-main">Réserver</span>
+    <span class="float-reserve-darija" lang="ar-Latn">nchoufou ?</span>
+  </span>
+</a>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-col">
+        <div class="foot-logo">Grain & Cendre <span class="ar" lang="ar" dir="rtl">قهوة</span></div>
+        <p>12 Rue de la Casbah, Tunis. Ouvert tous les jours dès 07h00.</p>
+      </div>
+      <div class="foot-links">
+        <a href="https://www.instagram.com/grainetcendre" target="_blank" rel="noopener" aria-label="Instagram de Grain & Cendre">Instagram</a>
+        <a href="https://www.facebook.com/grainetcendre" target="_blank" rel="noopener" aria-label="Facebook de Grain & Cendre">Facebook</a>
+        <a href="tel:+21671234567" aria-label="Appeler Grain & Cendre">Appeler</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span id="year"></span> Grain & Cendre</span>
+      <span>Torréfié à Tunis</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/main.js" defer></script>
+</body>
+</html>

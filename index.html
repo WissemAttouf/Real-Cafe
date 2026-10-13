@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Real Cafe — Café de spécialité, Tunis</title>
+<meta name="description" content="Café de spécialité à Tunis. Grains torréfiés sur place trois fois par semaine, carte courte, terrasse ouverte sur la rue de la Casbah. Réservation en ligne.">
+<link rel="canonical" href="https://grain-et-cendre-dusky.vercel.app/">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_TN">
+<meta property="og:site_name" content="Real Cafe">
+<meta property="og:title" content="Real Cafe — Café de spécialité, Tunis">
+<meta property="og:description" content="Grains torréfiés sur place à Tunis. Une carte courte, pensée pour être bonne du premier au dernier café de la journée.">
+<meta property="og:url" content="https://grain-et-cendre-dusky.vercel.app/">
+<meta property="og:image" content="https://grain-et-cendre-dusky.vercel.app/assets/og-cover.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Comptoir en chêne de Real Cafe, Tunis">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Real Cafe — Café de spécialité, Tunis">
+<meta name="twitter:description" content="Grains torréfiés sur place à Tunis. Une carte courte, pensée pour être bonne du premier au dernier café de la journée.">
+<meta name="twitter:image" content="https://grain-et-cendre-dusky.vercel.app/assets/og-cover.jpg">
+
+<meta name="theme-color" content="#17130F">
+
+<link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="ai-catalog" href="/.well-known/ai-catalog.json">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Real Cafe">
+<meta name="mobile-web-app-capable" content="yes">
+
+<link rel="stylesheet" href="/styles.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CafeOrCoffeeShop",
+  "name": "Real Cafe",
+  "alternateName": "ريال كافي",
+  "image": "https://grain-et-cendre-dusky.vercel.app/assets/og-cover.jpg",
+  "url": "https://grain-et-cendre-dusky.vercel.app/",
+  "telephone": "+21671234567",
+  "priceRange": "$$",
+  "servesCuisine": ["Café de spécialité", "Pâtisserie"],
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "12 Rue de la Casbah",
+    "addressLocality": "Tunis",
+    "postalCode": "1006",
+    "addressCountry": "TN"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": 36.7984, "longitude": 10.1710 },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday"], "opens": "07:00", "closes": "21:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Friday","Saturday"], "opens": "07:00", "closes": "22:30" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "08:00", "closes": "20:00" }
+  ]
+}
+</script>
+</head>
+<body>
+
+
+
+<a href="#main" class="skip-link" data-i18n="a11y.skip">Aller au contenu</a>
+
+<header id="siteHeader">
+  <nav class="wrap">
+    <a href="#home" class="logo">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><ellipse cx="12" cy="12" rx="9" ry="10" stroke="currentColor" stroke-width="1.4"/><path d="M12 2.5C9 6 9 18 12 21.5" stroke="currentColor" stroke-width="1.4"/></svg>
+      Real Cafe
+      <span class="ar" lang="ar" dir="rtl">ريال كافي</span>
+    </a>
+    <div class="nav-links">
+      <a href="#philosophie" data-i18n="nav.coffee">Le café</a>
+      <a href="#carte" data-i18n="nav.menu">La carte</a>
+      <a href="/boutique.html" data-i18n="nav.shop">Boutique</a>
+      <a href="#galerie" data-i18n="nav.gallery">Galerie</a>
+      <a href="#avis" data-i18n="nav.reviews">Avis</a>
+      <a href="#infos" data-i18n="nav.info">Infos</a>
+    </div>
+    <button class="cart-toggle" id="cartToggle" aria-label="Voir le panier">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" width="18" height="18">
+        <path d="M4 6 H8 L10 16 H18 L20 8 H8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="10" cy="20" r="1.5" fill="currentColor"/>
+        <circle cx="18" cy="20" r="1.5" fill="currentColor"/>
+      </svg>
+      <span class="cart-count" id="cartCount" hidden>0</span>
+    </button>
+    <button class="lang-toggle" id="langToggle" aria-label="Changer de langue">
+      <span class="lang-current">FR</span>
+      <span class="lang-sep">·</span>
+      <span class="lang-other">ع</span>
+    </button>
+    <a href="#reservation" class="nav-cta" data-i18n="nav.book">Réserver une table</a>
+    <button class="burger" id="burgerBtn" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
+
+<div class="mobile-panel" id="mobilePanel">
+  <a href="#philosophie" data-i18n="nav.coffee">Le café</a>
+  <a href="#carte" data-i18n="nav.menu">La carte</a>
+  <a href="/boutique.html" data-i18n="nav.shop">Boutique</a>
+  <a href="#galerie" data-i18n="nav.gallery">Galerie</a>
+  <a href="#avis" data-i18n="nav.reviews">Avis</a>
+  <a href="#infos" data-i18n="nav.info">Infos</a>
+  <a href="#reservation" class="nav-cta" data-i18n="nav.book">Réserver une table</a>
+  <div class="ar" lang="ar" dir="rtl">ريال كافي</div>
+</div>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="wrap">
+      <div>
+        <div class="hero-status">
+          <span class="dot" id="statusDot"></span>
+          <span id="statusText" data-i18n="hero.status_loading">Vérification des horaires…</span>
+        </div>
+        <h1 data-i18n-html="hero.title">Un café qui prend <em>son temps.</em></h1>
+        <p class="lead" data-i18n="hero.lead">Grains torréfiés sur place à Tunis, servis par des gens qui aiment ce qu'ils font. Une carte courte, pensée pour être bonne du premier au dernier café de la journée.</p>
+        <div class="hero-ctas">
+          <a href="#carte" class="btn-primary" data-i18n="hero.cta_menu">Voir la carte</a>
+          <a href="#reservation" class="btn-outline" data-i18n="hero.cta_book">Réserver une table</a>
+        </div>
+      </div>
+      <div class="hero-art">
+        <video class="hero-video" id="heroVideo" autoplay muted loop playsinline preload="metadata" aria-hidden="true">
+          <source src="/assets/hero/hero.webm" type="video/webm">
+          <source src="/assets/hero/hero.mp4" type="video/mp4">
+        </video>
+        <div class="moucharabieh-screen" id="moucharabieh" aria-hidden="true" data-parallax="15">
+          <div class="layer-outer">
+            <svg viewBox="0 0 400 400" fill="none">
+              <defs>
+                <pattern id="mchrbLarge" width="68" height="68" patternUnits="userSpaceOnUse">
+                  <path d="M34 2 L66 34 L34 66 L2 34 Z" stroke="#F6EEDD" stroke-width="1" fill="none"/>
+                  <path d="M34 18 L50 34 L34 50 L18 34 Z" stroke="#F6EEDD" stroke-width="1" fill="none"/>
+                </pattern>
+                <radialGradient id="mchrbMaskLarge" cx="50%" cy="50%" r="50%">
+                  <stop offset="0%" stop-color="#fff" stop-opacity="1"/>
+                  <stop offset="55%" stop-color="#fff" stop-opacity="0.75"/>
+                  <stop offset="100%" stop-color="#fff" stop-opacity="0"/>
+                </radialGradient>
+                <mask id="mchrbMaskOuter">
+                  <circle cx="200" cy="200" r="188" fill="url(#mchrbMaskLarge)"/>
+                </mask>
+              </defs>
+              <rect x="0" y="0" width="400" height="400" fill="url(#mchrbLarge)" mask="url(#mchrbMaskOuter)" opacity="0.10"/>
+            </svg>
+          </div>
+          <div class="layer-inner">
+            <svg viewBox="0 0 400 400" fill="none">
+              <defs>
+                <radialGradient id="screenGlow" cx="50%" cy="48%" r="60%">
+                  <stop offset="0%" stop-color="#CE9C49" stop-opacity="0.35"/>
+                  <stop offset="100%" stop-color="#CE9C49" stop-opacity="0"/>
+                </radialGradient>
+                <pattern id="mchrbFine" width="34" height="34" patternUnits="userSpaceOnUse">
+                  <path d="M17 1 L33 17 L17 33 L1 17 Z" stroke="#F6EEDD" stroke-width="1" fill="none"/>
+                  <path d="M17 9 L25 17 L17 25 L9 17 Z" stroke="#F6EEDD" stroke-width="1" fill="none"/>
+                </pattern>
+                <radialGradient id="mchrbMaskFine" cx="50%" cy="50%" r="50%">
+                  <stop offset="0%" stop-color="#fff" stop-opacity="1"/>
+                  <stop offset="60%" stop-color="#fff" stop-opacity="0.6"/>
+                  <stop offset="100%" stop-color="#fff" stop-opacity="0"/>
+                </radialGradient>
+                <mask id="mchrbMaskInner">
+                  <circle cx="200" cy="200" r="188" fill="url(#mchrbMaskFine)"/>
+                </mask>
+              </defs>
+              <circle cx="200" cy="200" r="188" fill="url(#screenGlow)"/>
+              <rect x="0" y="0" width="400" height="400" fill="url(#mchrbFine)" mask="url(#mchrbMaskInner)" opacity="0.22"/>
+            </svg>
+          </div>
+        </div>
+        <svg class="cup-illustration" viewBox="0 0 320 320" fill="none" aria-hidden="true">
+          <path class="steam-line s1" d="M130 90 C 120 75, 140 65, 130 50" />
+          <path class="steam-line s2" d="M160 90 C 150 75, 170 65, 160 50" />
+          <path class="steam-line s3" d="M190 90 C 180 75, 200 65, 190 50" />
+          <ellipse cx="160" cy="215" rx="118" ry="14" stroke="#B7AB90" stroke-width="1.2" opacity="0.35"/>
+          <path d="M75 150 h170 l-14 78 a20 20 0 0 1 -20 17 H109 a20 20 0 0 1 -20 -17 Z" stroke="#E4BC72" stroke-width="2"/>
+          <path d="M245 165 q34 4 34 30 q0 26 -34 26" stroke="#B7AB90" stroke-width="2" fill="none"/>
+          <line x1="75" y1="150" x2="245" y2="150" stroke="#CE9C49" stroke-width="2.4"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- BANDEAU TORRÉFACTION -->
+  <div class="roast-ticker" role="status" aria-live="polite">
+    <div class="wrap roast-ticker-inner">
+      <span class="roast-dot" aria-hidden="true"></span>
+      <span class="roast-label" data-i18n="roast.label">En torréfaction cette semaine</span>
+      <span class="roast-sep" aria-hidden="true">·</span>
+      <span class="roast-origin" id="roastOrigin">Chargement…</span>
+      <span class="roast-sep" aria-hidden="true">·</span>
+      <span class="roast-meta" id="roastMeta"></span>
+    </div>
+  </div>
+
+  <!-- PHILOSOPHIE -->
+  <section class="section-pad" id="philosophie">
+    <div class="wrap">
+      <div class="eyebrow-row reveal">
+        <h2 class="section-title" data-i18n="philo.title" data-split>Ce que nous croyons</h2>
+        <p class="section-note" data-i18n="philo.note">Trois torréfactions par semaine, en petites quantités, pour que ce que vous buvez ait été torréfié il y a des jours — pas des mois.</p>
+      </div>
+      <div class="philo-grid reveal">
+        <div>
+          <p data-i18n="philo.p1">Real Cafe est né d'un constat simple : la plupart des cafés servis en ville dorment depuis trop longtemps dans un sac avant d'arriver en tasse.</p>
+          <p data-i18n="philo.p2">Rien n'est pressé ici. Le café passe le temps qu'il faut en machine, le lait est versé lentement, et les tables ne se libèrent que lorsque la conversation est finie.</p>
+        </div>
+        <blockquote>
+          <span data-i18n="philo.quote">Le bon café ne se boit pas vite.</span>
+          <cite data-i18n="philo.quote_author">— Amine, torréfacteur, Real Cafe</cite>
+        </blockquote>
+      </div>
+
+      <!-- COMPTEURS ANIMÉS -->
+      <div class="stats reveal" id="stats">
+        <div class="stat">
+          <span class="stat-number" data-count="3" data-suffix="">0</span>
+          <span class="stat-label">torréfactions par semaine</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number" data-count="2" data-suffix="">0</span>
+          <span class="stat-label">origines en direct</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number" data-count="7" data-suffix="">0</span>
+          <span class="stat-label">jours de fraîcheur</span>
+        </div>
+      </div>
+
+      <div class="scrolly reveal">
+        <div class="scrolly-visual">
+          <div class="scrolly-frame">
+            <svg class="frame-illustration frame-terroir active" viewBox="0 0 300 280" fill="none" aria-hidden="true">
+              <circle cx="90" cy="150" r="5" fill="#E4BC72"/>
+              <text x="90" y="130" text-anchor="middle" font-family="Inter" font-size="11" fill="#B7AB90">Éthiopie</text>
+              <circle cx="205" cy="185" r="5" fill="#E4BC72"/>
+              <text x="205" y="207" text-anchor="middle" font-family="Inter" font-size="11" fill="#B7AB90">Colombie</text>
+              <path d="M90 150 Q150 60 205 185" stroke="#8B8168" stroke-width="1.2" stroke-dasharray="3 5" fill="none"/>
+              <circle cx="150" cy="150" r="3" fill="#CE9C49"/>
+              <text x="150" y="170" text-anchor="middle" font-family="Inter" font-size="10" fill="#8B8168">Real Cafe</text>
+              <circle cx="150" cy="150" r="95" stroke="#3A3122" stroke-width="1"/>
+            </svg>
+            <svg class="frame-illustration frame-torrefaction" viewBox="0 0 300 280" fill="none" aria-hidden="true">
+              <rect x="95" y="90" width="110" height="90" rx="45" stroke="#E4BC72" stroke-width="2"/>
+              <circle cx="150" cy="135" r="26" stroke="#B7AB90" stroke-width="1.4"/>
+              <rect x="205" y="125" width="26" height="20" rx="4" stroke="#B7AB90" stroke-width="1.4"/>
+              <path class="steam-line s1" d="M120 88 C 112 76, 128 68, 120 54" stroke="#B7AB90"/>
+              <path class="steam-line s2" d="M150 88 C 142 76, 158 68, 150 54" stroke="#B7AB90"/>
+              <path class="steam-line s3" d="M180 88 C 172 76, 188 68, 180 54" stroke="#B7AB90"/>
+            </svg>
+            <svg class="frame-illustration frame-tasse" viewBox="0 0 300 280" fill="none" aria-hidden="true">
+              <path d="M108 130 h84 l-7 55 a12 12 0 0 1 -12 10 H127 a12 12 0 0 1 -12 -10 Z" stroke="#E4BC72" stroke-width="2"/>
+              <path d="M192 138 q22 2 22 20 q0 18 -22 18" stroke="#B7AB90" stroke-width="1.6" fill="none"/>
+              <ellipse cx="150" cy="130" rx="42" ry="7" stroke="#B7AB90" stroke-width="1.2" opacity="0.4"/>
+              <rect x="70" y="60" width="62" height="22" rx="11" stroke="#8B8168" stroke-width="1"/>
+              <text x="101" y="75" text-anchor="middle" font-family="Inter" font-size="9" fill="#8B8168">Fruité</text>
+              <rect x="150" y="45" width="72" height="22" rx="11" stroke="#8B8168" stroke-width="1"/>
+              <text x="186" y="60" text-anchor="middle" font-family="Inter" font-size="9" fill="#8B8168">Floral</text>
+            </svg>
+          </div>
+          <div class="scrolly-dots" role="tablist" aria-label="Étapes de la graine à la tasse">
+            <button type="button" class="s-dot active" data-target="stop-terroir" aria-label="Étape 1"></button>
+            <button type="button" class="s-dot" data-target="stop-torrefaction" aria-label="Étape 2"></button>
+            <button type="button" class="s-dot" data-target="stop-tasse" aria-label="Étape 3"></button>
+          </div>
+        </div>
+
+        <div class="scrolly-stops">
+          <div class="scrolly-stop" id="stop-terroir" data-frame="frame-terroir">
+            <div class="num">01</div>
+            <h3 data-i18n="philo.stop1_title">Le terroir</h3>
+            <p data-i18n="philo.stop1_text">Nos deux origines actuelles viennent d'Éthiopie (Guji, 1900–2200 m) et de Colombie (Huila, 1800–2000 m).</p>
+          </div>
+          <div class="scrolly-stop" id="stop-torrefaction" data-frame="frame-torrefaction">
+            <div class="num">02</div>
+            <h3 data-i18n="philo.stop2_title">La torréfaction</h3>
+            <p data-i18n="philo.stop2_text">Chaque lot est torréfié sur place, trois fois par semaine, dans notre torréfacteur à tambour.</p>
+          </div>
+          <div class="scrolly-stop" id="stop-tasse" data-frame="frame-tasse">
+            <div class="num">03</div>
+            <h3 data-i18n="philo.stop3_title">La tasse</h3>
+            <p data-i18n="philo.stop3_text">Avant de rejoindre la carte, chaque torréfaction est goûtée en salle par l'équipe.</p>
+            <div class="taste-pills">
+              <span data-i18n="philo.taste1">Fruité</span>
+              <span data-i18n="philo.taste2">Floral</span>
+              <span data-i18n="philo.taste3">Chocolat noir</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="zellige-sep" aria-hidden="true"></div>
+
+  <!-- VIDÉO -->
+  <section class="video-section section-pad" id="video">
+    <div class="wrap">
+      <div class="eyebrow-row reveal">
+        <h2 class="section-title" data-i18n="video.title" data-split>En mouvement</h2>
+        <p class="section-note" data-i18n="video.note">Quelques secondes dans nos journées — la torréfaction, le service, et ce silence particulier du matin.</p>
+      </div>
+      <div class="video-wrap reveal">
+        <div class="video-frame" id="videoFrame">
+         <video class="video-player" id="videoPlayer" ... preload="none">
+          <source src="/assets/video/cafe-mobile.mp4" type="video/mp4" media="(max-width: 900px)">
+          <source src="/assets/video/cafe.mp4" type="video/mp4">
+         </video>
+
+          <button class="video-overlay" id="videoOverlay" type="button" aria-label="Lire la vidéo">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" width="48" height="48">
+              <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M10 8.5 L16 12 L10 15.5 Z" fill="currentColor"/>
+            </svg>
+            <span data-i18n="video.play">Lancer la vidéo</span>
+          </button>
+          <div class="video-controls" aria-hidden="true">
+            <button type="button" class="video-btn" id="videoPlayPause" aria-label="Pause / Play">
+              <svg viewBox="0 0 24 24" fill="none" width="16" height="16">
+                <path id="videoPlayIcon" d="M8 5 L19 12 L8 19 Z" fill="currentColor"/>
+                <g id="videoPauseIcon" style="display:none">
+                  <rect x="7" y="5" width="3.5" height="14" fill="currentColor"/>
+                  <rect x="13.5" y="5" width="3.5" height="14" fill="currentColor"/>
+                </g>
+              </svg>
+            </button>
+            <button type="button" class="video-btn" id="videoMute" aria-label="Activer / Couper le son">
+              <svg viewBox="0 0 24 24" fill="none" width="16" height="16">
+                <path id="videoMuteIcon" d="M4 9 H8 L13 5 V19 L8 15 H4 Z" fill="currentColor"/>
+                <path id="videoUnmuteIcon" d="M4 9 H8 L13 5 V19 L8 15 H4 Z M16 9 Q19 12 16 15 M18 7 Q22 12 18 17" stroke="currentColor" stroke-width="1.5" fill="none" style="display:none"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="zellige-sep" aria-hidden="true"></div>
+
+  <!-- CARTE -->
+  <section class="carte section-pad" id="carte">
+    <div class="wrap">
+      <div class="eyebrow-row reveal">
+        <h2 class="section-title" data-i18n="menu.title" data-split>La carte</h2>
+        <p class="section-note" data-i18n="menu.note">Prix en dinars tunisiens, service compris. Touchez un café pour voir son origine.</p>
+      </div>
+      <div class="menu-grid reveal" id="menuGrid"></div>
+    </div>
+  </section>
+
+  <!-- BREW GUIDE -->
+  <section class="brew section-pad" id="brew">
+    <div class="wrap">
+      <div class="eyebrow-row reveal">
+        <h2 class="section-title" data-i18n="brew.title" data-split>Brew guide</h2>
+        <p class="section-note" data-i18n="brew.note">Le bon ratio pour la bonne méthode. Choisissez votre dose, on s'occupe du reste.</p>
+      </div>
+      <div class="brew-grid reveal">
+        <div class="brew-methods" role="tablist" aria-label="Méthodes d'extraction">
+          <button type="button" class="brew-method active" role="tab" aria-selected="true" data-method="v60">
+            <span class="brew-method-name">V60</span>
+            <span class="brew-method-ratio">1:16</span>
+          </button>
+          <button type="button" class="brew-method" role="tab" aria-selected="false" data-method="press">
+            <span class="brew-method-name">French press</span>
+            <span class="brew-method-ratio">1:12</span>
+          </button>
+          <button type="button" class="brew-method" role="tab" aria-selected="false" data-method="cold">
+            <span class="brew-method-name">Cold brew</span>
+            <span class="brew-method-ratio">1:8</span>
+          </button>
+        </div>
+        <div class="brew-panel">
+          <div class="brew-input">
+            <label for="brewDose" data-i18n="brew.dose_label">Dose de café</label>
+            <div class="brew-dose-row">
+              <input type="range" id="brewDose" min="8" max="60" step="1" value="20">
+              <output id="brewDoseValue" for="brewDose">20 g</output>
+            </div>
+          </div>
+          <div class="brew-results" aria-live="polite">
+            <div class="brew-result">
+              <span class="brew-result-label" data-i18n="brew.res_water">Eau</span>
+              <span class="brew-result-value" id="brewWater">320 mL</span>
+            </div>
+            <div class="brew-result">
+              <span class="brew-result-label" data-i18n="brew.res_ratio">Ratio</span>
+              <span class="brew-result-value" id="brewRatio">1:16</span>
+            </div>
+            <div class="brew-result">
+              <span class="brew-result-label" data-i18n="brew.res_time">Temps</span>
+              <span class="brew-result-value" id="brewTime">2 min 30</span>
+            </div>
+            <div class="brew-result">
+              <span class="brew-result-label" data-i18n="brew.res_grind">Mouture</span>
+              <span class="brew-result-value" id="brewGrind">Moyenne</span>
+            </div>
+          </div>
+          <p class="brew-note" id="brewNote">Versez en spirale, en trois temps. Laissez s'égoutter complètement avant de servir.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="zellige-sep alt" aria-hidden="true"></div>
+
+  <!-- GALERIE -->
+  <section class="section-pad" id="galerie">
+    <div class="wrap">
+      <div class="eyebrow-row reveal">
+        <h2 class="section-title" data-i18n="gallery.title" data-split>L'ambiance</h2>
+        <p class="section-note" data-i18n="gallery.note">Un aperçu du lieu — comptoir en chêne, torréfacteur apparent, et une terrasse ouverte sur la rue.</p>
+      </div>
+      <div class="gallery-grid reveal">
+        <div class="g-tile g1"><img src="/assets/gallery/comptoir.jpg" alt="" loading="lazy" class="g-img"><span data-i18n="gallery.tile1">Le comptoir</span></div>
+        <div class="g-tile g2"><img src="/assets/gallery/torrefacteur.jpg" alt="" loading="lazy" class="g-img"><span data-i18n="gallery.tile2">Le torréfacteur</span></div>
+        <div class="g-tile g3"><img src="/assets/gallery/terrasse.jpg" alt="" loading="lazy" class="g-img"><span data-i18n="gallery.tile3">La terrasse</span></div>
+        <div class="g-tile g4"><img src="/assets/gallery/grains.jpg" alt="" loading="lazy" class="g-img"><span data-i18n="gallery.tile4">Grains fraîchement torréfiés</span></div>
+        <div class="g-tile g5"><img src="/assets/gallery/service.jpg" alt="" loading="lazy" class="g-img"><span data-i18n="gallery.tile5">Le service du matin</span></div>
+      </div>
+      <p class="jasmine-bullet reveal">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <circle cx="12" cy="12" r="2" stroke="#E4BC72" stroke-width="1.2"/>
+          <path d="M12 10 C 13 7, 16 7, 17 9" stroke="#E4BC72" stroke-width="1.2" stroke-linecap="round"/>
+          <path d="M12 10 C 13 7, 16 7, 17 9" stroke="#E4BC72" stroke-width="1.2" stroke-linecap="round" transform="rotate(72 12 12)"/>
+          <path d="M12 10 C 13 7, 16 7, 17 9" stroke="#E4BC72" stroke-width="1.2" stroke-linecap="round" transform="rotate(144 12 12)"/>
+          <path d="M12 10 C 13 7, 16 7, 17 9" stroke="#E4BC72" stroke-width="1.2" stroke-linecap="round" transform="rotate(216 12 12)"/>
+          <path d="M12 10 C 13 7, 16 7, 17 9" stroke="#E4BC72" stroke-width="1.2" stroke-linecap="round" transform="rotate(288 12 12)"/>
+        </svg>
+        <span data-i18n="gallery.jasmine">Le soir, on sert parfois quelques brins de jasmin avec le café turc.</span>
+      </p>
+    </div>
+  </section>
+
+  <div class="zellige-sep" aria-hidden="true"></div>
+
+  <!-- AVIS -->
+  <section class="section-pad" id="avis">
+    <div class="wrap">
+      <div class="eyebrow-row reveal">
+        <h2 class="section-title" data-i18n="reviews.title" data-split>Ce qu'on en dit</h2>
+      </div>
+      <div class="avis-row reveal">
+        <div class="avis-card">
+          <div class="mark">”</div>
+          <p data-i18n="reviews.r1_text">Le seul endroit du quartier où je sens vraiment la différence entre un café torréfié il y a trois jours et un café torréfié il y a trois mois.</p>
+          <span class="who" data-i18n="reviews.r1_author">Sarra B. — habituée</span>
+        </div>
+        <div class="avis-card">
+          <div class="mark">”</div>
+          <p data-i18n="reviews.r2_text">La terrasse le matin, le café turc, et personne qui vous presse de partir.</p>
+          <span class="who" data-i18n="reviews.r2_author">Yassine K. — client régulier</span>
+        </div>
+        <div class="avis-card">
+          <div class="mark">”</div>
+          <p data-i18n="reviews.r3_text">Le makroudh maison à côté d'un flat white, c'est le genre de mélange qu'on ne trouve nulle part ailleurs en ville.</p>
+          <span class="who" data-i18n="reviews.r3_author">Nour A. — de passage</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CARNETS -->
+  <section class="section-pad" id="carnets">
+    <div class="wrap">
+      <div class="eyebrow-row reveal">
+        <h2 class="section-title" data-i18n="carnets.title" data-split>Carnets</h2>
+        <p class="section-note" data-i18n="carnets.note">Ce qu'on écrit entre deux services — portraits, méthodes, recettes.</p>
+      </div>
+      <div class="carnets-grid reveal" id="carnetsGrid"></div>
+    </div>
+  </section>
+
+  <div class="zellige-sep" aria-hidden="true"></div>
+
+  <!-- INFOS -->
+  <section class="infos section-pad" id="infos">
+    <div class="wrap">
+      <div class="eyebrow-row reveal">
+        <h2 class="section-title" data-i18n="info.title" data-split>Infos pratiques</h2>
+      </div>
+      <div class="infos-grid reveal">
+        <div>
+          <h3 data-i18n="info.hours_title">Horaires</h3>
+          <table class="hours-table">
+            <tr><td data-i18n="info.hours_mon_thu">Lundi — Jeudi</td><td>07h00 – 21h00</td></tr>
+            <tr><td data-i18n="info.hours_fri_sat">Vendredi — Samedi</td><td>07h00 – 22h30</td></tr>
+            <tr><td data-i18n="info.hours_sun">Dimanche</td><td>08h00 – 20h00</td></tr>
+          </table>
+        </div>
+        <div class="addr">
+          <h3 data-i18n="info.address_title">Adresse</h3>
+          <p data-i18n="info.address_street">12 Rue de la Casbah</p>
+          <p data-i18n="info.address_city">Tunis 1006, Tunisie</p>
+          <p>+216 71 234 567</p>
+          <a class="maps-link" href="https://www.google.com/maps/search/?api=1&query=Rue+de+la+Casbah+Tunis" target="_blank" rel="noopener" data-i18n="info.map_link">Itinéraire →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESERVATION -->
+  <section class="section-pad" id="reservation">
+    <div class="wrap">
+      <div class="resa-wrap">
+        <div class="resa-copy reveal">
+          <h2 class="section-title" data-i18n="resa.title">Réserver une table</h2>
+          <p data-i18n="resa.note">Pour les groupes de plus de 6 personnes ou les demandes de dernière minute, un appel reste plus sûr qu'un formulaire.</p>
+          <a class="tel" href="tel:+21671234567">+216 71 234 567</a>
+        </div>
+        <div class="reveal">
+          <form id="resaForm" novalidate>
+            <div class="field">
+              <label for="f-name" data-i18n="resa.field_name">Nom</label>
+              <input id="f-name" name="name" type="text" autocomplete="name" placeholder="Votre nom">
+              <span class="err" data-err="name" aria-live="polite"></span>
+            </div>
+            <div class="field">
+              <label for="f-phone" data-i18n="resa.field_phone">Téléphone</label>
+              <input id="f-phone" name="phone" type="tel" autocomplete="tel" placeholder="+216 ...">
+              <span class="err" data-err="phone" aria-live="polite"></span>
+            </div>
+            <div class="field">
+              <label for="f-date" data-i18n="resa.field_date">Date</label>
+              <input id="f-date" name="date" type="date">
+              <span class="err" data-err="date" aria-live="polite"></span>
+            </div>
+            <div class="field">
+              <label for="f-time" data-i18n="resa.field_time">Heure</label>
+              <input id="f-time" name="time" type="time">
+              <span class="err" data-err="time" aria-live="polite"></span>
+            </div>
+            <div class="field">
+              <label for="f-guests" data-i18n="resa.field_guests">Nombre de personnes</label>
+              <select id="f-guests" name="guests">
+                <option value="1">1</option>
+                <option value="2" selected>2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="f-note">&nbsp;</label>
+            </div>
+            <div class="field full">
+              <label for="f-message" data-i18n="resa.field_message">Message (optionnel)</label>
+              <textarea id="f-message" name="message" placeholder="Une préférence de table, une occasion à souligner…"></textarea>
+            </div>
+            <div class="hp-field" aria-hidden="true">
+              <label for="f-website">Site web (ne pas remplir)</label>
+              <input id="f-website" name="website" type="text" tabindex="-1" autocomplete="off">
+            </div>
+            <div class="submit-row">
+              <button type="submit" class="btn-primary" data-i18n="resa.submit">Confirmer la réservation</button>
+            </div>
+          </form>
+          <div class="confirm" id="confirmBox">
+            <h3 data-i18n="resa.success_title">Réservation enregistrée</h3>
+            <p id="confirmText"></p>
+            <a href="#" class="reset" id="resetForm" data-i18n="resa.reset">Faire une nouvelle réservation</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<div class="menu-panel-backdrop" id="menuBackdrop"></div>
+<aside class="menu-panel" id="menuPanel" role="dialog" aria-modal="true" aria-labelledby="panelName" aria-hidden="true">
+  <button type="button" class="panel-close" id="panelClose" aria-label="Fermer">✕</button>
+  <div class="panel-content">
+    <p class="panel-price" id="panelPrice"></p>
+    <h3 id="panelName"></h3>
+    <div class="panel-meta" id="panelMeta"></div>
+    <div class="panel-notes" id="panelNotes"></div>
+    <p class="panel-desc" id="panelDesc"></p>
+    <p class="panel-footer">Torréfié sur place · 3×/semaine</p>
+  </div>
+</aside>
+
+<!-- DRAWER PANIER -->
+<div class="cart-backdrop" id="cartBackdrop"></div>
+<aside class="cart-drawer" id="cartDrawer" role="dialog" aria-modal="true" aria-labelledby="cartTitle" aria-hidden="true">
+  <header class="cart-header">
+    <h2 class="cart-title" id="cartTitle">Votre panier</h2>
+    <button type="button" class="cart-close" id="cartClose" aria-label="Fermer">✕</button>
+  </header>
+  <div class="cart-body" id="cartBody"></div>
+  <footer class="cart-footer" id="cartFooter" hidden>
+    <div class="cart-totals">
+      <div class="cart-line">
+        <span>Sous-total</span>
+        <span id="cartSubtotal">0,00 DT</span>
+      </div>
+    </div>
+    <a href="/checkout.html" class="cart-checkout">Passer commande</a>
+  </footer>
+</aside>
+
+<a href="#reservation" class="float-reserve" id="floatReserve" aria-label="Réserver une table">
+  <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" width="16" height="16">
+    <rect x="3" y="5" width="18" height="16" rx="2" stroke="currentColor" stroke-width="1.6"/>
+    <path d="M3 10h18M8 3v4M16 3v4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+  </svg>
+  <span class="float-reserve-label">
+    <span class="float-reserve-main" data-i18n="float_cta.label">Réserver</span>
+    <span class="float-reserve-darija" lang="ar-Latn" data-i18n="float_cta.darija">nchoufou ?</span>
+  </span>
+</a>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-col">
+        <div class="foot-logo">Real Cafe <span class="ar" lang="ar" dir="rtl">ريال كافي</span></div>
+        <p data-i18n="footer.address">12 Rue de la Casbah, Tunis. Ouvert tous les jours dès 07h00.</p>
+      </div>
+      <div class="foot-links">
+        <a href="https://www.instagram.com/realcafe" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a>
+        <a href="https://www.facebook.com/realcafe" target="_blank" rel="noopener" aria-label="Facebook">Facebook</a>
+        <a href="tel:+21671234567" aria-label="Appeler">+216 71 234 567</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span id="year"></span> Real Cafe</span>
+      <span data-i18n="footer.made_in">Torréfié à Tunis</span>
+    </div>
+  </div>
+</footer>
+
+<script type="module" src="/js/main.js"></script>
+<script type="module">
+  import * as cart from '/js/features/cart.js?v=2';
+  cart.init();
+</script>
+</body>
+</html>
