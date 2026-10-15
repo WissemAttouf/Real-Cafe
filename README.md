@@ -3,9 +3,9 @@
 Site web responsive conçu pour une marque de café de spécialité à Tunis. Le projet associe une présentation éditoriale, un menu interactif, des parcours de réservation, une boutique en ligne et un espace d’administration.
 
 <p align="center">
-  <a href="https://grain-et-cendre-dusky.vercel.app/"><strong>Voir la démonstration</strong></a>
+  <a href="https://grain-et-cendre-dusky.vercel.app/"></a>
   ·
-  <a href="https://github.com/WissemAttouf/Real-Cafe"><strong>Consulter le code source</strong></a>
+  <a href="https://github.com/WissemAttouf/Real-Cafe"></a>
 </p>
 
 ## Présentation
@@ -53,8 +53,6 @@ Le frontend s’appuie sur des pages web et des modules JavaScript. Des fonction
 
 ## Aperçu visuel
 
-Le dépôt contient des images de l’expérience dans `assets/`, notamment des visuels de comptoir, de grains, de torréfaction et de terrasse.
-
 ## Installation locale
 
 ### Prérequis
@@ -85,3 +83,13 @@ Si les dépendances de test sont installées, lancez les scripts Playwright déf
 
 **Wissem Attouf** — Ingénieur logiciel | Développeur Full Stack  
 [GitHub](https://github.com/WissemAttouf) · [LinkedIn](https://www.linkedin.com/in/wissem-attouf-452509226/) · [Portfolio](https://wissem-portfolio.vercel.app/) · [E-mail](mailto:wattouf35@gmail.com)
+
+---
+
+## Aperçu visuel
+
+<p align="center">
+  <img src="assets/og-cover.jpg" alt="Visuel de couverture — Real-Cafe" width="800">
+  <br><strong>Visuel de couverture</strong>
+  <br><em>Image de présentation utilisée pour illustrer le projet et ses aperçus de partage.</em>
+</p>
