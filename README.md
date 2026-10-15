@@ -81,13 +81,6 @@ Si les dépendances de test sont installées, lancez les scripts Playwright déf
 - **Site en ligne :** [grain-et-cendre-dusky.vercel.app](https://grain-et-cendre-dusky.vercel.app/)
 - **Code source :** [WissemAttouf/Real-Cafe](https://github.com/WissemAttouf/Real-Cafe)
 
-## Auteur
-
-**Wissem Attouf** — Ingénieur logiciel | Développeur Full Stack  
-[GitHub](https://github.com/WissemAttouf) · [LinkedIn](https://www.linkedin.com/in/wissem-attouf-452509226/) · [Portfolio](https://wissem-portfolio.vercel.app/) · [E-mail](mailto:wattouf35@gmail.com)
-
-
----
 
 ## Aperçu visuel
 
@@ -96,3 +89,13 @@ Si les dépendances de test sont installées, lancez les scripts Playwright déf
   <br><strong>Visuel de couverture</strong>
   <br><em>Image de présentation utilisée pour illustrer le projet et ses aperçus de partage.</em>
 </p>
+
+---
+
+## Auteur
+
+**Wissem Attouf** — Ingénieur logiciel | Développeur Full Stack  
+[GitHub](https://github.com/WissemAttouf) · [LinkedIn](https://www.linkedin.com/in/wissem-attouf-452509226/) · [Portfolio](https://wissem-portfolio.vercel.app/) · [E-mail](mailto:wattouf35@gmail.com)
+
+
+---
