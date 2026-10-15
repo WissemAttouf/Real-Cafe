@@ -1,4 +1,4 @@
-# Real Café — Expérience numérique pour un café de spécialité
+# 💻 Real Café — Expérience numérique pour un café de spécialité
 
 Site web responsive conçu pour une marque de café de spécialité à Tunis. Le projet associe une présentation éditoriale, un menu interactif, des parcours de réservation, une boutique en ligne et un espace d’administration.
 
@@ -8,15 +8,15 @@ Site web responsive conçu pour une marque de café de spécialité à Tunis. Le
   <a href="https://github.com/WissemAttouf/Real-Cafe"><strong>Consulter le code source</strong></a>
 </p>
 
-## Présentation
+## 📌 Présentation
 
 Real Café est un concept de site web pensé autour de visuels soignés, de la découverte du café et de parcours clients simples. Les visiteurs peuvent explorer la carte, découvrir les origines et méthodes de préparation du café, effectuer une réservation et parcourir une boutique en ligne.
 
 Le frontend s’appuie sur des pages web et des modules JavaScript. Des fonctions côté serveur sont prévues via les API Vercel, avec Supabase pour la persistance et Resend pour les e-mails transactionnels selon la configuration du projet.
 
-## Fonctionnalités
+## ✨ Fonctionnalités
 
-### Parcours client
+### 🛍️ Parcours client
 - Site responsive présentant l’histoire du café, la carte et les origines du café.
 - Menu interactif basé sur des données structurées.
 - Informations sur les cafés, leur torréfaction et les méthodes d’extraction.
@@ -26,7 +26,7 @@ Le frontend s’appuie sur des pages web et des modules JavaScript. Des fonction
 - Ressources de Progressive Web App et navigation mobile adaptée.
 - Animations et effets visuels au défilement.
 
-### Administration et services
+### 🛡️ Administration et services
 - Pages d’administration pour le suivi des réservations, commandes et produits.
 - Routes API pour les disponibilités, réservations, produits et commandes.
 - Intégration Supabase pour les données.
@@ -34,12 +34,12 @@ Le frontend s’appuie sur des pages web et des modules JavaScript. Des fonction
 - Validation des requêtes et mécanismes anti-abus configurés.
 - En-têtes HTTP et politique de sécurité du contenu dans la configuration Vercel.
 
-### Qualité et visibilité
+### ✅ Qualité et visibilité
 - Tests navigateur avec Playwright.
 - Intégration Sentry côté navigateur.
 - Fichiers SEO, dont `robots.txt` et `sitemap.xml`.
 
-## Technologies
+## 🛠️ Technologies
 
 | Domaine | Technologies |
 |---|---|
@@ -51,18 +51,18 @@ Le frontend s’appuie sur des pages web et des modules JavaScript. Des fonction
 | Tests navigateur | Playwright |
 | Hébergement | Vercel |
 
-## Aperçu visuel
+## 🖼️ Aperçu visuel
 
 Le dépôt contient des images de l’expérience dans `assets/`, notamment des visuels de comptoir, de grains, de torréfaction et de terrasse.
 
-## Installation locale
+## ⚙️ Installation locale
 
-### Prérequis
+### ⚙️ Prérequis
 - Node.js et npm
 - Git
 - Comptes et paramètres de services externes uniquement si vous souhaitez tester les fonctionnalités qui les utilisent
 
-### Étapes
+### ⚙️ Étapes
 
 ```bash
 git clone https://github.com/WissemAttouf/Real-Cafe.git
@@ -72,17 +72,17 @@ npm install
 
 Consultez `package.json` pour les scripts disponibles. Configurez les variables d’environnement nécessaires à Supabase, Resend et aux autres intégrations avant de tester les fonctions correspondantes. Ne publiez jamais les clés secrètes.
 
-## Tests
+## 🧪 Tests
 
 Si les dépendances de test sont installées, lancez les scripts Playwright définis dans `package.json`. Les tests et les services externes peuvent nécessiter une configuration locale spécifique.
 
-## Démonstration
+## 🚀 Démonstration
 
 - **Site en ligne :** [grain-et-cendre-dusky.vercel.app](https://grain-et-cendre-dusky.vercel.app/)
 - **Code source :** [WissemAttouf/Real-Cafe](https://github.com/WissemAttouf/Real-Cafe)
 
 
-## Aperçu visuel
+## 🖼️ Aperçu visuel
 
 <p align="center">
   <img src="assets/og-cover.jpg" alt="Visuel de couverture — Real-Cafe" width="800">
@@ -92,7 +92,7 @@ Si les dépendances de test sont installées, lancez les scripts Playwright déf
 
 ---
 
-## Auteur
+## 👨‍💻 Auteur
 
 **Wissem Attouf** — Ingénieur logiciel | Développeur Full Stack  
 [GitHub](https://github.com/WissemAttouf) · [LinkedIn](https://www.linkedin.com/in/wissem-attouf-452509226/) · [Portfolio](https://wissem-portfolio.vercel.app/) · [E-mail](mailto:wattouf35@gmail.com)
